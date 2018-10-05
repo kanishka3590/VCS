@@ -1,0 +1,556 @@
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ cd ..
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ cd learngit_clone
+bash: cd: learngit_clone: No such file or directory
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ cd leargit_clone
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (master)
+$ cd ..
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ cd learngit1
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ cat .git/config
+[core]
+        repositoryformatversion = 0
+        filemode = false
+        bare = false
+        logallrefupdates = true
+        symlinks = false
+        ignorecase = true
+[user]
+        name = ka
+        email = kanishka.3590@gmail.com
+[remote "origin"]
+        url = https://github.com/kanishka3590/leargit-demo
+        fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+        remote = origin
+        merge = refs/heads/master
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ cd ..
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ cd learn_branch
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ cat .git/config
+[core]
+        repositoryformatversion = 0
+        filemode = false
+        bare = false
+        logallrefupdates = true
+        symlinks = false
+        ignorecase = true
+[remote "origin"]
+        url = https://github.com/kanishka3590/learn-branch
+        fetch = +refs/heads/*:refs/remotes/origin/*
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ vi README.md
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ git add .
+warning: LF will be replaced by CRLF in README.md.
+The file will have its original line endings in your working directory.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ git add .
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ git commit -m "README file created"
+[master 59248c1] README file created
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ git branch
+* master
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ git branch dev
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ git checkout dev
+Switched to branch 'dev'
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (dev)
+$ ls
+README.md    sample10.txt  sample3.txt  sample5.txt  sample7.txt  sample9.txt
+sample1.txt  sample2.txt   sample4.txt  sample6.txt  sample8.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (dev)
+$ git log --oneline
+59248c1 (HEAD -> dev, master) README file created
+1ed2629 sample2 file modified
+22de245 sample1 file modified
+775dd7a sample file created
+5809dad sample file created
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (dev)
+$ git checkout master
+Switched to branch 'master'
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ vi sample3.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ git add .
+warning: LF will be replaced by CRLF in sample3.txt.
+The file will have its original line endings in your working directory.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ git add .
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ git commit -m "Sample3 changed by master"
+[master 3e1ab81] Sample3 changed by master
+ 1 file changed, 1 insertion(+)
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ git log --oneline
+3e1ab81 (HEAD -> master) Sample3 changed by master
+59248c1 (dev) README file created
+1ed2629 sample2 file modified
+22de245 sample1 file modified
+775dd7a sample file created
+5809dad sample file created
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ git checkout dev
+Switched to branch 'dev'
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (dev)
+$ git log --oneline
+59248c1 (HEAD -> dev) README file created
+1ed2629 sample2 file modified
+22de245 sample1 file modified
+775dd7a sample file created
+5809dad sample file created
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (dev)
+$ vi sample4.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (dev)
+$ git add .
+warning: LF will be replaced by CRLF in sample4.txt.
+The file will have its original line endings in your working directory.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (dev)
+$ git add .
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (dev)
+$ git commit -m "Sample4 changed by dev"
+[dev 3001663] Sample4 changed by dev
+ 1 file changed, 1 insertion(+)
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (dev)
+$ git log --oneline
+3001663 (HEAD -> dev) Sample4 changed by dev
+59248c1 README file created
+1ed2629 sample2 file modified
+22de245 sample1 file modified
+775dd7a sample file created
+5809dad sample file created
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (dev)
+$ git checkout master
+Switched to branch 'master'
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ git rebase dev
+First, rewinding head to replay your work on top of it...
+Applying: Sample3 changed by master
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ git log --oneline
+f77b2b8 (HEAD -> master) Sample3 changed by master
+3001663 (dev) Sample4 changed by dev
+59248c1 README file created
+1ed2629 sample2 file modified
+22de245 sample1 file modified
+775dd7a sample file created
+5809dad sample file created
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ vi README.md
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ git add .
+warning: LF will be replaced by CRLF in README.md.
+The file will have its original line endings in your working directory.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ git add .
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ git commit -m "readme changed by master"
+[master 4e9364c] readme changed by master
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ git log --oneline
+4e9364c (HEAD -> master) readme changed by master
+f77b2b8 Sample3 changed by master
+3001663 (dev) Sample4 changed by dev
+59248c1 README file created
+1ed2629 sample2 file modified
+22de245 sample1 file modified
+775dd7a sample file created
+5809dad sample file created
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ git checkout dev
+Switched to branch 'dev'
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (dev)
+$ vi README.md
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (dev)
+$ git add .
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (dev)
+$ git commit -m "readme changed by dev"
+[dev db216cd] readme changed by dev
+ 1 file changed, 1 insertion(+)
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (dev)
+$ git log --oneline
+db216cd (HEAD -> dev) readme changed by dev
+3001663 Sample4 changed by dev
+59248c1 README file created
+1ed2629 sample2 file modified
+22de245 sample1 file modified
+775dd7a sample file created
+5809dad sample file created
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (dev)
+$ git checkout master
+Switched to branch 'master'
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ git log --oneline
+4e9364c (HEAD -> master) readme changed by master
+f77b2b8 Sample3 changed by master
+3001663 Sample4 changed by dev
+59248c1 README file created
+1ed2629 sample2 file modified
+22de245 sample1 file modified
+775dd7a sample file created
+5809dad sample file created
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ git rebase dev
+First, rewinding head to replay your work on top of it...
+Applying: Sample3 changed by master
+Applying: readme changed by master
+Using index info to reconstruct a base tree...
+M       README.md
+Falling back to patching base and 3-way merge...
+Auto-merging README.md
+CONFLICT (content): Merge conflict in README.md
+error: Failed to merge in the changes.
+Patch failed at 0002 readme changed by master
+Use 'git am --show-current-patch' to see the failed patch
+
+Resolve all conflicts manually, mark them as resolved with
+"git add/rm <conflicted_files>", then run "git rebase --continue".
+You can instead skip this commit: run "git rebase --skip".
+To abort and get back to the state before "git rebase", run "git rebase --abort".
+
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master|REBASE 2/2)
+$ vi README.md
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master|REBASE 2/2)
+$ git status
+rebase in progress; onto db216cd
+You are currently rebasing branch 'master' on 'db216cd'.
+  (fix conflicts and then run "git rebase --continue")
+  (use "git rebase --skip" to skip this patch)
+  (use "git rebase --abort" to check out the original branch)
+
+Unmerged paths:
+  (use "git reset HEAD <file>..." to unstage)
+  (use "git add <file>..." to mark resolution)
+
+        both modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master|REBASE 2/2)
+$ git add .
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master|REBASE 2/2)
+$ git status
+rebase in progress; onto db216cd
+You are currently rebasing branch 'master' on 'db216cd'.
+  (all conflicts fixed: run "git rebase --continue")
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   README.md
+
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master|REBASE 2/2)
+$ git rebase --continue
+Applying: readme changed by master
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ git log --oneline
+96e61f5 (HEAD -> master) readme changed by master
+552cbb9 Sample3 changed by master
+db216cd (dev) readme changed by dev
+3001663 Sample4 changed by dev
+59248c1 README file created
+1ed2629 sample2 file modified
+22de245 sample1 file modified
+775dd7a sample file created
+5809dad sample file created
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ git checkout dev
+Switched to branch 'dev'
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (dev)
+$ git log --oneline
+db216cd (HEAD -> dev) readme changed by dev
+3001663 Sample4 changed by dev
+59248c1 README file created
+1ed2629 sample2 file modified
+22de245 sample1 file modified
+775dd7a sample file created
+5809dad sample file created
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (dev)
+$ git checkout master
+Switched to branch 'master'
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ ls
+README.md    sample10.txt  sample3.txt  sample5.txt  sample7.txt  sample9.txt
+sample1.txt  sample2.txt   sample4.txt  sample6.txt  sample8.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ vi sample.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ git add .
+warning: LF will be replaced by CRLF in sample.txt.
+The file will have its original line endings in your working directory.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ git add .
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   sample.txt
+
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ git checkout dev
+Switched to branch 'dev'
+A       sample.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (dev)
+$ git rebase master
+Cannot rebase: Your index contains uncommitted changes.
+Please commit or stash them.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (dev)
+$ git stash save "moving file for temp use"
+Saved working directory and index state On dev: moving file for temp use
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (dev)
+$ git status
+On branch dev
+nothing to commit, working tree clean
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (dev)
+$ git rebase master
+First, rewinding head to replay your work on top of it...
+Fast-forwarded dev to master.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (dev)
+$ git status
+On branch dev
+nothing to commit, working tree clean
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (dev)
+$ git status list
+On branch dev
+nothing to commit, working tree clean
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (dev)
+$ git stash list
+stash@{0}: On dev: moving file for temp use
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (dev)
+$ touch sample{22..26}.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (dev)
+$ git status
+On branch dev
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        sample22.txt
+        sample23.txt
+        sample24.txt
+        sample25.txt
+        sample26.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (dev)
+$ git add .
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (dev)
+$ git stash save "for temp file"
+Saved working directory and index state On dev: for temp file
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (dev)
+$ git stash list
+stash@{0}: On dev: for temp file
+stash@{1}: On dev: moving file for temp use
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (dev)
+$ git status
+On branch dev
+nothing to commit, working tree clean
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (dev)
+$ ls
+README.md    sample10.txt  sample3.txt  sample5.txt  sample7.txt  sample9.txt
+sample1.txt  sample2.txt   sample4.txt  sample6.txt  sample8.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (dev)
+$ git checkout master
+Switched to branch 'master'
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ touch sample{10..15}.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ git add .
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   sample11.txt
+        new file:   sample12.txt
+        new file:   sample13.txt
+        new file:   sample14.txt
+        new file:   sample15.txt
+
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ git stash save "file creater to stash"
+Saved working directory and index state On master: file creater to stash
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ git stash list
+stash@{0}: On master: file creater to stash
+stash@{1}: On dev: for temp file
+stash@{2}: On dev: moving file for temp use
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ git stash apply stash@{1}
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   sample22.txt
+        new file:   sample23.txt
+        new file:   sample24.txt
+        new file:   sample25.txt
+        new file:   sample26.txt
+
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ git stash list
+stash@{0}: On master: file creater to stash
+stash@{1}: On dev: for temp file
+stash@{2}: On dev: moving file for temp use
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ git add .
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   sample22.txt
+        new file:   sample23.txt
+        new file:   sample24.txt
+        new file:   sample25.txt
+        new file:   sample26.txt
+
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ git stash list
+stash@{0}: On master: file creater to stash
+stash@{1}: On dev: for temp file
+stash@{2}: On dev: moving file for temp use
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ git stash pop stash@{1}
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   sample22.txt
+        new file:   sample23.txt
+        new file:   sample24.txt
+        new file:   sample25.txt
+        new file:   sample26.txt
+
+Dropped stash@{1} (093146566da5ef6d8a2ee7b4302d136c87dd40dd)
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ git stash list
+stash@{0}: On master: file creater to stash
+stash@{1}: On dev: moving file for temp use
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   sample22.txt
+        new file:   sample23.txt
+        new file:   sample24.txt
+        new file:   sample25.txt
+        new file:   sample26.txt
+
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$

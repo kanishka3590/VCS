@@ -1,0 +1,343 @@
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~
+$ cd git-dir
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ cd learngit
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git show HEAD
+commit 4e717fe271853b6e59422289b6fa0bb01480da00 (HEAD -> master, origin/master)
+Author: kan <kanishka.3590@gmail.co>
+Date:   Tue Jun 26 13:31:43 2018 +0530
+
+    clone-testing.txt
+
+diff --git a/clone-testing.txt b/clone-testing.txt
+new file mode 100644
+index 0000000..6f14de9
+--- /dev/null
++++ b/clone-testing.txt
+@@ -0,0 +1 @@
++file created to check cloning is happening properly or not.
+diff --git a/learngit b/learngit
+new file mode 160000
+index 0000000..95a40cb
+--- /dev/null
++++ b/learngit
+@@ -0,0 +1 @@
++Subproject commit 95a40cbad56458dd49e3ab3883f6d620f8ebb91f
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git show ~1
+fatal: ambiguous argument '~1': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ touch dm{1..5}.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git add .
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git commit -m "New files created"
+[master 5e9f92d] New files created
+ 5 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 dm1.txt
+ create mode 100644 dm2.txt
+ create mode 100644 dm3.txt
+ create mode 100644 dm4.txt
+ create mode 100644 dm5.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git log
+commit 5e9f92d7f1b4c50b984ee11c37e0123708d864c6 (HEAD -> master)
+Author: kan <kanishka.3590@gmail.co>
+Date:   Tue Jun 26 13:59:25 2018 +0530
+
+    New files created
+
+commit 4e717fe271853b6e59422289b6fa0bb01480da00 (origin/master)
+Author: kan <kanishka.3590@gmail.co>
+Date:   Tue Jun 26 13:31:43 2018 +0530
+
+    clone-testing.txt
+
+commit 33428d81573f28f521b373eb5327a6f1effa561b
+Author: kan <kanishka.3590@gmail.co>
+Date:   Thu Jun 21 15:13:54 2018 +0530
+
+    css index
+
+commit 95a40cbad56458dd49e3ab3883f6d620f8ebb91f
+Author: kan <kanishka.3590@gmail.co>
+Date:   Thu Jun 21 14:10:40 2018 +0530
+
+    CSS For footer links added
+
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ touch del.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git clean -n
+Would remove del.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git clean -f del.txt
+Removing del.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ ls
+clone-testing.txt  dm3.txt  index.css   learngit/  sample.txt
+dm1.txt            dm4.txt  index.html  README.md  style.css
+dm2.txt            dm5.txt  index.js    sample/
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ touch del.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git add .
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git log -oneline
+fatal: unrecognized argument: -oneline
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git log --oneline
+5e9f92d (HEAD -> master) New files created
+4e717fe (origin/master) clone-testing.txt
+33428d8 css index
+95a40cb CSS For footer links added
+04cffe5 CSS For footer added
+517cb1c CSS For header links added
+8aae0e7 CSS For header added
+0c4ed3a HTML Links Added in Footer
+cab39b2 HTML Footer Added
+e39b044 vesion1
+1b1135d sample commit
+60629de Add index.html and index.js
+7c02a23 initial commit with README file
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git reset HEAD del.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git log --oneline
+5e9f92d (HEAD -> master) New files created
+4e717fe (origin/master) clone-testing.txt
+33428d8 css index
+95a40cb CSS For footer links added
+04cffe5 CSS For footer added
+517cb1c CSS For header links added
+8aae0e7 CSS For header added
+0c4ed3a HTML Links Added in Footer
+cab39b2 HTML Footer Added
+e39b044 vesion1
+1b1135d sample commit
+60629de Add index.html and index.js
+7c02a23 initial commit with README file
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ ls -la
+total 29
+drwxr-xr-x 1 kanishka 197121    0 Jun 26 14:02 ./
+drwxr-xr-x 1 kanishka 197121    0 Jun 25 15:53 ../
+drwxr-xr-x 1 kanishka 197121    0 Jun 26 14:03 .git/
+-rw-r--r-- 1 kanishka 197121   60 Jun 26 13:30 clone-testing.txt
+-rw-r--r-- 1 kanishka 197121    0 Jun 26 14:02 del.txt
+-rw-r--r-- 1 kanishka 197121    0 Jun 26 13:58 dm1.txt
+-rw-r--r-- 1 kanishka 197121    0 Jun 26 13:58 dm2.txt
+-rw-r--r-- 1 kanishka 197121    0 Jun 26 13:58 dm3.txt
+-rw-r--r-- 1 kanishka 197121    0 Jun 26 13:58 dm4.txt
+-rw-r--r-- 1 kanishka 197121    0 Jun 26 13:58 dm5.txt
+-rw-r--r-- 1 kanishka 197121   10 Jun 21 15:12 index.css
+-rw-r--r-- 1 kanishka 197121 2060 Jun 21 14:07 index.html
+-rw-r--r-- 1 kanishka 197121   16 Jun 19 15:35 index.js
+drwxr-xr-x 1 kanishka 197121    0 Jun 21 15:03 learngit/
+-rw-r--r-- 1 kanishka 197121   20 Jun 19 15:47 README.md
+drwxr-xr-x 1 kanishka 197121    0 Jun 20 14:50 sample/
+-rw-r--r-- 1 kanishka 197121   21 Jun 25 15:33 sample.txt
+-rw-r--r-- 1 kanishka 197121  860 Jun 21 14:10 style.css
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        del.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git add .
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   del.txt
+
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git reset HEAD del.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git add .
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git rm --cached del.txt
+rm 'del.txt'
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        del.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git add .
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git commit -m "File commited to check remove opration"
+[master f4419ef] File commited to check remove opration
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 del.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git log --oneline
+f4419ef (HEAD -> master) File commited to check remove opration
+5e9f92d New files created
+4e717fe (origin/master) clone-testing.txt
+33428d8 css index
+95a40cb CSS For footer links added
+04cffe5 CSS For footer added
+517cb1c CSS For header links added
+8aae0e7 CSS For header added
+0c4ed3a HTML Links Added in Footer
+cab39b2 HTML Footer Added
+e39b044 vesion1
+1b1135d sample commit
+60629de Add index.html and index.js
+7c02a23 initial commit with README file
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git reset --soft ^C
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git reset --soft 5e9f92d
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git log --oneline
+5e9f92d (HEAD -> master) New files created
+4e717fe (origin/master) clone-testing.txt
+33428d8 css index
+95a40cb CSS For footer links added
+04cffe5 CSS For footer added
+517cb1c CSS For header links added
+8aae0e7 CSS For header added
+0c4ed3a HTML Links Added in Footer
+cab39b2 HTML Footer Added
+e39b044 vesion1
+1b1135d sample commit
+60629de Add index.html and index.js
+7c02a23 initial commit with README file
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ touch del.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git add .
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git commit -m "File commited to check remove opration"
+[master c8c0737] File commited to check remove opration
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 del.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git revert HEAD
+[master b57dc07] Revert "File commited to check remove opration"
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 del.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git log --oneline
+b57dc07 (HEAD -> master) Revert "File commited to check remove opration"
+c8c0737 File commited to check remove opration
+5e9f92d New files created
+4e717fe (origin/master) clone-testing.txt
+33428d8 css index
+95a40cb CSS For footer links added
+04cffe5 CSS For footer added
+517cb1c CSS For header links added
+8aae0e7 CSS For header added
+0c4ed3a HTML Links Added in Footer
+cab39b2 HTML Footer Added
+e39b044 vesion1
+1b1135d sample commit
+60629de Add index.html and index.js
+7c02a23 initial commit with README file
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git commit --amend
+[master 24cb4d3] Revert "File commited to check remove opration"
+ Date: Tue Jun 26 14:15:37 2018 +0530
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 del.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git commit --amend -m "an updated commit message"
+[master a04835c] an updated commit message
+ Date: Tue Jun 26 14:15:37 2018 +0530
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 del.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git log --oneline
+a04835c (HEAD -> master) an updated commit message
+c8c0737 File commited to check remove opration
+5e9f92d New files created
+4e717fe (origin/master) clone-testing.txt
+33428d8 css index
+95a40cb CSS For footer links added
+04cffe5 CSS For footer added
+517cb1c CSS For header links added
+8aae0e7 CSS For header added
+0c4ed3a HTML Links Added in Footer
+cab39b2 HTML Footer Added
+e39b044 vesion1
+1b1135d sample commit
+60629de Add index.html and index.js
+7c02a23 initial commit with README file
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$

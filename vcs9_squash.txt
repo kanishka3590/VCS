@@ -1,0 +1,132 @@
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/branch (master)
+$ cd ..
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ cd leargit_branch
+bash: cd: leargit_branch: No such file or directory
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ cd learngit_branch
+bash: cd: learngit_branch: No such file or directory
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ ls
+bankers/  leargit_clone/  learn_branch/  learngit1/
+branch/   leargit-demo/   learngit/      wooper-prj/
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ cd leargit_branch
+bash: cd: leargit_branch: No such file or directory
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ cd learn_branch
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ git log --oneline
+96e61f5 (HEAD -> master, origin/dev, dev) readme changed by master
+552cbb9 Sample3 changed by master
+db216cd readme changed by dev
+3001663 Sample4 changed by dev
+59248c1 README file created
+1ed2629 sample2 file modified
+22de245 sample1 file modified
+775dd7a sample file created
+5809dad sample file created
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ git rebase -i ~1ed2629..5809dad
+fatal: Needed a single revision
+invalid upstream '~1ed2629..5809dad'
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ git rebase -i 1ed2629..5809dad
+fatal: Needed a single revision
+invalid upstream '1ed2629..5809dad'
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ git rebase -i 5809dad
+Cannot rebase: Your index contains uncommitted changes.
+Please commit or stash them.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   sample22.txt
+        new file:   sample23.txt
+        new file:   sample24.txt
+        new file:   sample25.txt
+        new file:   sample26.txt
+
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ git log --oneline
+96e61f5 (HEAD -> master, origin/dev, dev) readme changed by master
+552cbb9 Sample3 changed by master
+db216cd readme changed by dev
+3001663 Sample4 changed by dev
+59248c1 README file created
+1ed2629 sample2 file modified
+22de245 sample1 file modified
+775dd7a sample file created
+5809dad sample file created
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ git commit -m "changes"
+[master 1b04968] changes
+ 5 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 sample22.txt
+ create mode 100644 sample23.txt
+ create mode 100644 sample24.txt
+ create mode 100644 sample25.txt
+ create mode 100644 sample26.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ git log --oneline
+1b04968 (HEAD -> master) changes
+96e61f5 (origin/dev, dev) readme changed by master
+552cbb9 Sample3 changed by master
+db216cd readme changed by dev
+3001663 Sample4 changed by dev
+59248c1 README file created
+1ed2629 sample2 file modified
+22de245 sample1 file modified
+775dd7a sample file created
+5809dad sample file created
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ git rebase -i 5809dad
+[detached HEAD 12c482d] all sample files created
+ Author: kani <kanishka.3590@gmail.com>
+ Date: Wed Jun 27 13:52:50 2018 +0530
+ 9 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 sample10.txt
+ create mode 100644 sample2.txt
+ create mode 100644 sample3.txt
+ create mode 100644 sample4.txt
+ create mode 100644 sample5.txt
+ create mode 100644 sample6.txt
+ create mode 100644 sample7.txt
+ create mode 100644 sample8.txt
+ create mode 100644 sample9.txt
+Successfully rebased and updated refs/heads/master.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$ git log --oneline
+b9bd2c6 (HEAD -> master) changes
+21fe118 readme changed by master
+9458142 Sample3 changed by master
+5bbed21 readme changed by dev
+edab325 Sample4 changed by dev
+525b155 README file created
+84edd3b all sample files created
+5809dad sample file created
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learn_branch (master)
+$

@@ -1,0 +1,731 @@
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~
+$ cd .ssh/
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/.ssh
+$ cat git key_pub
+cat: git: No such file or directory
+cat: key_pub: No such file or directory
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/.ssh
+$ cat git git_key.pub
+cat: git: No such file or directory
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDdU3JyHwXSIeN+VV9DjZEtgWf6Z5PM+Lc5g3tKGE1xCXcaJ69mueTloK2pARCdEgUHSQLBz1LV/z70LY/UkVuDrqXYbOcJWI+92LE66OrcUswF9u0jjBIRuuSCreTHI9RgWc+F0A8TJewzuNwv7Rxqe8HiHAL9CVvZs7AmdTs+fGwuPZ0rqTdpO+4sIznUIIWdgieySGAD1v2XJVPhEoqhB7f35FrSX0969WGe6n9+/3suNxr5ouNHFfyqY2XfwBCIHcWwDrZUEIdYeoQlERYa1sWzMHFVMlX10KMfEm63207aVJoSvbBh1JELPDDdfNAfKNlqe38LD+w+6nZNEzTr kanishka@DESKTOP-E3NRGRV
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/.ssh
+$ cat git git_key
+cat: git: No such file or directory
+-----BEGIN RSA PRIVATE KEY-----
+MIIEpAIBAAKCAQEA3VNych8F0iHjflVfQ42RLYFn+meTzPi3OYN7ShhNcQl3Giev
+Zrnk5aCtqQEQnRIFB0kCwc9S1f8+9C2P1JFbg66l2GznCViPvdixOujq3FLMBfbt
+I4wSEbrkgq3kxyPUYFnPhdAPEyXsM7jcL+0canvB4hwC/Qlb2bOwJnU7PnxsLj2d
+K6k3aTvuLCM51CCFnYInskhgA9b9lyVT4RKKoQe39+Ra0l9PevVhnup/fv97Ljca
++aLjRxX8qmNl38AQiB3FsA62VBCHWHqEJREWGtbFszBxVTJV9dCjHxJut9tO2lSa
+Er2wYdSRCzww3XzQHyjZant/Cw/sPup2TRM06wIDAQABAoIBAGXeBoroJHG3D1IS
+USpyeiOLsCPckHaC8zIRhilwThR82si7A0wwu13FOqjSyKbCqHXV8OLrXaEJPhx8
+6/pWfNx7AfI/DYeLr30dw1Tt50tJAIauRC9cROTMNGjBSM8veoxuScm5HXceuTyF
+FTMp2y5Xj8FWSznTmOb2gVjyFDaJissv1VtCvvykYMJ0rzuq5qkyID96DKPA0JFb
+JgEqzS2xcHSrj1LzMOuRRhyCmx710VvvrNDyphjzqiCEexiR5A9C7FUBVTDYhVLR
+QmbnVpm45i5zcpZncrb86RVddFy/jSdscDt43ChlyfZJ7VJqethmxn1CwiaowsGD
+d/Rh18ECgYEA8iBot07ng0NC46O2g7He/1Pud0XtBjBJiFrl27WTWQYI3ALW1yg+
+GZ3POjniX26YqnWGNHr6hJ/JI1wa2qlo94KvGaLcZDLMIFOuoXC5Rdpo5U5Y8C28
+9G8R5VqH4GTjZT3/N35LQvz5BolWOoQE/214NxA87zifoAq6skWM3iMCgYEA6gHt
+eLGtFA5RDkbtW+6AYEPd9F+BTbEVUGrlAQtozWMyebp+JytqVcBXvL/nXmmtHk+l
+3GgwVq3fAHItjwFoRRwM1o4Dn7/+C1TbdQ1FeAvh4HeikjbRz6qHeUabg+IpJ5Lz
+UBzxDjpN9XnjN0EycwH/IXyOEor0NOV6EJ3l5pkCgYEAhMA4KajdTh6moeC0xOfU
+9/Cwojx4hBgdeOE9fYTEUN76JIZ5/GVYBvt7DtWFxAUDNxJQjp2OlQB2ayiooJKZ
+tnq0Pj4Iz/b57A91g5YmPqJNOMwH/0dUfkAXc8R7ExC9jFi9gVOBOC0y696IpHSV
+uOXwL2B7yD0nZ7v6OJvhbDkCgYEAsARjK7X6Cmv6bFLNl6j+x2pFOdvc1yOsdKDz
+QKXkXxmOjiHJYo01nurfFAsFbe7vWS1wBSoZshl29E7uFfNpCxLeVUTdVPyFiuB5
+csJYzsOhU8apcnHpv9r1rDOAJuOnMS1H96rNZ3ZTzaGxV46i8/88eWPHOgtrRZ6X
+AojCtYECgYA2Kw6ZlCPfO8+45wNbZJGfHHjhTe0/2tNjAtuMJ05HHsxAyUf6rNnK
+MRg4mQfuWZj82Z5Nh7gXnWR16fwO64/pY6UK+7HpRX6qNC+vm6uSFrYyQo/zsww0
+XlvSnNrYbEcHPinNEu4HqCC9AcP9xcLFtg5NjrI5XDl/OwAYRqWPyA==
+-----END RSA PRIVATE KEY-----
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/.ssh
+$ cd
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~
+$ cd git_dir
+bash: cd: git_dir: No such file or directory
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~
+$ cd git-dir
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ cd leargit1
+bash: cd: leargit1: No such file or directory
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ cd learngit1
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ git clone https://github.com/shamsheer191319/repo-pratice1.git
+Cloning into 'repo-pratice1'...
+remote: Counting objects: 5, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 5 (delta 0), reused 5 (delta 0), pack-reused 0
+Unpacking objects: 100% (5/5), done.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ ls -la
+total 20
+drwxr-xr-x 1 kanishka 197121  0 Jun 25 13:47 ./
+drwxr-xr-x 1 kanishka 197121  0 Jun 23 15:05 ../
+drwxr-xr-x 1 kanishka 197121  0 Jun 23 14:59 .git/
+-rw-r--r-- 1 kanishka 197121 37 Jun 22 19:14 demo1.js
+-rw-r--r-- 1 kanishka 197121 83 Jun 22 19:19 demo2.html
+-rw-r--r-- 1 kanishka 197121 10 Jun 23 14:55 file1.txt
+-rw-r--r-- 1 kanishka 197121  0 Jun 23 14:54 file10.txt
+-rw-r--r-- 1 kanishka 197121  0 Jun 23 14:54 file2.txt
+-rw-r--r-- 1 kanishka 197121  0 Jun 23 14:54 file3.txt
+-rw-r--r-- 1 kanishka 197121  0 Jun 23 14:54 file4.txt
+-rw-r--r-- 1 kanishka 197121  0 Jun 23 14:54 file5.txt
+-rw-r--r-- 1 kanishka 197121  0 Jun 23 14:54 file6.txt
+-rw-r--r-- 1 kanishka 197121  0 Jun 23 14:54 file7.txt
+-rw-r--r-- 1 kanishka 197121  0 Jun 23 14:54 file8.txt
+-rw-r--r-- 1 kanishka 197121  0 Jun 23 14:54 file9.txt
+drwxr-xr-x 1 kanishka 197121  0 Jun 23 14:20 leargit-demo/
+-rw-r--r-- 1 kanishka 197121 25 Jun 22 19:10 README.md
+drwxr-xr-x 1 kanishka 197121  0 Jun 25 13:47 repo-pratice1/
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ git push -u origin master
+Everything up-to-date
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ cd repo-pratic1
+bash: cd: repo-pratic1: No such file or directory
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ cd repo-pratic1/
+bash: cd: repo-pratic1/: No such file or directory
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ ls
+demo1.js    file10.txt  file4.txt  file7.txt  leargit-demo/
+demo2.html  file2.txt   file5.txt  file8.txt  README.md
+file1.txt   file3.txt   file6.txt  file9.txt  repo-pratice1/
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ cd repo-pratice1/
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1/repo-pratice1 (master)
+$ ls -la
+total 9
+drwxr-xr-x 1 kanishka 197121  0 Jun 25 13:47 ./
+drwxr-xr-x 1 kanishka 197121  0 Jun 25 13:47 ../
+drwxr-xr-x 1 kanishka 197121  0 Jun 25 13:47 .git/
+-rw-r--r-- 1 kanishka 197121 40 Jun 25 13:47 README.md
+drwxr-xr-x 1 kanishka 197121  0 Jun 25 13:47 task1/
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1/repo-pratice1 (master)
+$ vi task1.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1/repo-pratice1 (master)
+$ git add .
+warning: LF will be replaced by CRLF in task1.txt.
+The file will have its original line endings in your working directory.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1/repo-pratice1 (master)
+$ git add task1.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1/repo-pratice1 (master)
+$ git commit -m "Changes in other person repository"
+[master 9eabfdf] Changes in other person repository
+ 1 file changed, 1 insertion(+)
+ create mode 100644 task1.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1/repo-pratice1 (master)
+$ git push -u origin master
+remote: Permission to shamsheer191319/repo-pratice1.git denied to kanishka3590.
+fatal: unable to access 'https://github.com/shamsheer191319/repo-pratice1.git/': The requested URL returned error: 403
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1/repo-pratice1 (master)
+$ cd ..
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ git push -u origin master
+Everything up-to-date
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ git remote
+origin
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ ls
+demo1.js    file10.txt  file4.txt  file7.txt  leargit-demo/
+demo2.html  file2.txt   file5.txt  file8.txt  README.md
+file1.txt   file3.txt   file6.txt  file9.txt  repo-pratice1/
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ git remote
+origin
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ git remote -v
+origin  https://github.com/kanishka3590/leargit-demo (fetch)
+origin  https://github.com/kanishka3590/leargit-demo (push)
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ git remote add alpha git@github.com:kanishka3590/learngit.git
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ git remote -v
+alpha   git@github.com:kanishka3590/learngit.git (fetch)
+alpha   git@github.com:kanishka3590/learngit.git (push)
+origin  https://github.com/kanishka3590/leargit-demo (fetch)
+origin  https://github.com/kanishka3590/leargit-demo (push)
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ git remote remove alpha
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ git remote -v
+origin  https://github.com/kanishka3590/leargit-demo (fetch)
+origin  https://github.com/kanishka3590/leargit-demo (push)
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ git pull origin master
+From https://github.com/kanishka3590/leargit-demo
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ cd ..
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ ls
+bankers/  learngit/  learngit1/  wooper-prj/
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ cd bankers
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/bankers (master)
+$ ls -la
+total 17
+drwxr-xr-x 1 kanishka 197121  0 Jun 21 13:07 ./
+drwxr-xr-x 1 kanishka 197121  0 Jun 23 15:05 ../
+drwxr-xr-x 1 kanishka 197121  0 Jun 21 13:07 .git/
+-rw-r--r-- 1 kanishka 197121 61 Jun 20 14:33 account.js
+-rw-r--r-- 1 kanishka 197121 36 Jun 20 14:36 balance.js
+-rw-r--r-- 1 kanishka 197121 23 Jun 20 14:38 deposit.js
+-rw-r--r-- 1 kanishka 197121 14 Jun 20 14:40 user.js
+-rw-r--r-- 1 kanishka 197121 10 Jun 20 14:40 widraw.js
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/bankers (master)
+$ cd ..
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ git clone git@github.com:kanishka3590/learngit.git
+fatal: destination path 'learngit' already exists and is not an empty directory.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ cd learngit
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git pull origin master
+From https://github.com/kanishka3590/learngit
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git fetch origin master
+From https://github.com/kanishka3590/learngit
+ * branch            master     -> FETCH_HEAD
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ ls
+demo3.js   index.html  learngit/  sample/     style.css
+index.css  index.js    README.md  sample.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git log --oneline
+33428d8 (HEAD -> master, origin/master) css index
+95a40cb CSS For footer links added
+04cffe5 CSS For footer added
+517cb1c CSS For header links added
+8aae0e7 CSS For header added
+0c4ed3a HTML Links Added in Footer
+cab39b2 HTML Footer Added
+e39b044 vesion1
+1b1135d sample commit
+60629de Add index.html and index.js
+7c02a23 initial commit with README file
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git merge origin/master
+Already up to date.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ ls
+demo3.js   index.html  learngit/  sample/     style.css
+index.css  index.js    README.md  sample.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ cd ..
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ git clone git@github.com:kanishka3590/learngit.git
+fatal: destination path 'learngit' already exists and is not an empty directory.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ git clone git@github.com:kanishka3590/learngit.git learngit_clone
+Cloning into 'learngit_clone'...
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ ls
+bankers/  learngit/  learngit1/  wooper-prj/
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ ls -la
+total 28
+drwxr-xr-x 1 kanishka 197121 0 Jun 25 14:41 ./
+drwxr-xr-x 1 kanishka 197121 0 Jun 25 13:51 ../
+drwxr-xr-x 1 kanishka 197121 0 Jun 21 13:07 bankers/
+drwxr-xr-x 1 kanishka 197121 0 Jun 23 15:05 learngit/
+drwxr-xr-x 1 kanishka 197121 0 Jun 25 13:47 learngit1/
+drwxr-xr-x 1 kanishka 197121 0 Jun 19 15:29 wooper-prj/
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ cd learngit
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git clone git@github.com:kanishka3590/learngit.git learngit_clone
+Cloning into 'learngit_clone'...
+Warning: Permanently added the RSA host key for IP address '192.30.253.113' to the list of known hosts.
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ touch sample.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ touch sample{1..5}.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   sample.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        demo3.js
+        learngit/
+        sample1.txt
+        sample2.txt
+        sample3.txt
+        sample4.txt
+        sample5.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git clean -n
+Would remove demo3.js
+Would remove sample1.txt
+Would remove sample2.txt
+Would remove sample3.txt
+Would remove sample4.txt
+Would remove sample5.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git clean -f sample2.txt
+Removing sample2.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ ls
+demo3.js    index.js   sample/      sample3.txt  style.css
+index.css   learngit/  sample.txt   sample4.txt
+index.html  README.md  sample1.txt  sample5.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   sample.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        demo3.js
+        learngit/
+        sample1.txt
+        sample3.txt
+        sample4.txt
+        sample5.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git clean -f
+Removing demo3.js
+Removing sample1.txt
+Removing sample3.txt
+Removing sample4.txt
+Removing sample5.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ touch sample{1..5}.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ ls
+index.css   learngit/  sample.txt   sample3.txt  style.css
+index.html  README.md  sample1.txt  sample4.txt
+index.js    sample/    sample2.txt  sample5.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   sample.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        learngit/
+        sample1.txt
+        sample2.txt
+        sample3.txt
+        sample4.txt
+        sample5.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git clean -n
+Would remove sample1.txt
+Would remove sample2.txt
+Would remove sample3.txt
+Would remove sample4.txt
+Would remove sample5.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git reset HEAD sample2.txt
+Unstaged changes after reset:
+M       sample.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git add .
+warning: LF will be replaced by CRLF in sample.txt.
+The file will have its original line endings in your working directory.
+warning: adding embedded git repository: learngit
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> learngit
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached learngit
+hint:
+hint: See "git help submodule" for more information.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git add .
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   learngit
+        modified:   sample.txt
+        new file:   sample1.txt
+        new file:   sample2.txt
+        new file:   sample3.txt
+        new file:   sample4.txt
+        new file:   sample5.txt
+
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git rm --cached sample.txt
+rm 'sample.txt'
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ ls
+index.css   learngit/  sample.txt   sample3.txt  style.css
+index.html  README.md  sample1.txt  sample4.txt
+index.js    sample/    sample2.txt  sample5.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   learngit
+        deleted:    sample.txt
+        new file:   sample1.txt
+        new file:   sample2.txt
+        new file:   sample3.txt
+        new file:   sample4.txt
+        new file:   sample5.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        sample.txt
+
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git add .
+warning: LF will be replaced by CRLF in sample.txt.
+The file will have its original line endings in your working directory.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git add .
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git commit -m "created"
+[master c0380b4] created
+ 7 files changed, 6 insertions(+)
+ create mode 160000 learngit
+ create mode 100644 sample1.txt
+ create mode 100644 sample2.txt
+ create mode 100644 sample3.txt
+ create mode 100644 sample4.txt
+ create mode 100644 sample5.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git log --oneline
+c0380b4 (HEAD -> master) created
+33428d8 (origin/master) css index
+95a40cb CSS For footer links added
+04cffe5 CSS For footer added
+517cb1c CSS For header links added
+8aae0e7 CSS For header added
+0c4ed3a HTML Links Added in Footer
+cab39b2 HTML Footer Added
+e39b044 vesion1
+1b1135d sample commit
+60629de Add index.html and index.js
+7c02a23 initial commit with README file
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ ls
+index.css   learngit/  sample.txt   sample3.txt  style.css
+index.html  README.md  sample1.txt  sample4.txt
+index.js    sample/    sample2.txt  sample5.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git reset --soft ^C
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git reset --soft 33428d8
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git log --oneline
+33428d8 (HEAD -> master, origin/master) css index
+95a40cb CSS For footer links added
+04cffe5 CSS For footer added
+517cb1c CSS For header links added
+8aae0e7 CSS For header added
+0c4ed3a HTML Links Added in Footer
+cab39b2 HTML Footer Added
+e39b044 vesion1
+1b1135d sample commit
+60629de Add index.html and index.js
+7c02a23 initial commit with README file
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   learngit
+        modified:   sample.txt
+        new file:   sample1.txt
+        new file:   sample2.txt
+        new file:   sample3.txt
+        new file:   sample4.txt
+        new file:   sample5.txt
+
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git commit -m "created"
+[master 21c1f2a] created
+ 7 files changed, 6 insertions(+)
+ create mode 160000 learngit
+ create mode 100644 sample1.txt
+ create mode 100644 sample2.txt
+ create mode 100644 sample3.txt
+ create mode 100644 sample4.txt
+ create mode 100644 sample5.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git log --oneline
+21c1f2a (HEAD -> master) created
+33428d8 (origin/master) css index
+95a40cb CSS For footer links added
+04cffe5 CSS For footer added
+517cb1c CSS For header links added
+8aae0e7 CSS For header added
+0c4ed3a HTML Links Added in Footer
+cab39b2 HTML Footer Added
+e39b044 vesion1
+1b1135d sample commit
+60629de Add index.html and index.js
+7c02a23 initial commit with README file
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git reset --hard HEAD~1
+warning: unable to rmdir 'learngit': Directory not empty
+HEAD is now at 33428d8 css index
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git reset --hard 21c1f2a
+HEAD is now at 21c1f2a created
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git log --oneline
+21c1f2a (HEAD -> master) created
+33428d8 (origin/master) css index
+95a40cb CSS For footer links added
+04cffe5 CSS For footer added
+517cb1c CSS For header links added
+8aae0e7 CSS For header added
+0c4ed3a HTML Links Added in Footer
+cab39b2 HTML Footer Added
+e39b044 vesion1
+1b1135d sample commit
+60629de Add index.html and index.js
+7c02a23 initial commit with README file
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git reset --hard 33428d8
+warning: unable to rmdir 'learngit': Directory not empty
+HEAD is now at 33428d8 css index
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git log --oneline
+33428d8 (HEAD -> master, origin/master) css index
+95a40cb CSS For footer links added
+04cffe5 CSS For footer added
+517cb1c CSS For header links added
+8aae0e7 CSS For header added
+0c4ed3a HTML Links Added in Footer
+cab39b2 HTML Footer Added
+e39b044 vesion1
+1b1135d sample commit
+60629de Add index.html and index.js
+7c02a23 initial commit with README file
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        learngit/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ ls la
+ls: cannot access 'la': No such file or directory
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ ls
+index.css   index.js   README.md  sample.txt
+index.html  learngit/  sample/    style.css
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git log --oneline
+33428d8 (HEAD -> master, origin/master) css index
+95a40cb CSS For footer links added
+04cffe5 CSS For footer added
+517cb1c CSS For header links added
+8aae0e7 CSS For header added
+0c4ed3a HTML Links Added in Footer
+cab39b2 HTML Footer Added
+e39b044 vesion1
+1b1135d sample commit
+60629de Add index.html and index.js
+7c02a23 initial commit with README file
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        learngit/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git log --oneline
+33428d8 (HEAD -> master, origin/master) css index
+95a40cb CSS For footer links added
+04cffe5 CSS For footer added
+517cb1c CSS For header links added
+8aae0e7 CSS For header added
+0c4ed3a HTML Links Added in Footer
+cab39b2 HTML Footer Added
+e39b044 vesion1
+1b1135d sample commit
+60629de Add index.html and index.js
+7c02a23 initial commit with README file
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$

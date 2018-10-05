@@ -1,0 +1,1336 @@
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~
+$ pwd
+/c/Users/kanishka
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~
+$ mkdir exam-git
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~
+$ ls
+'3D Objects'/
+ AppData/
+'Application Data'@
+ bootstrap/
+ Contacts/
+ Cookies@
+ Desktop/
+ Documents/
+ Downloads/
+ exam-git/
+ Favorites/
+ git-dir/
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ MicrosoftEdgeBackups/
+ Music/
+'My Documents'@
+ NetHood@
+ NTUSER.DAT
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ NTUSER.DAT{47a6a179-a514-11e7-a94e-ec0d9a05c860}.TxR.0.regtrans-ms
+ NTUSER.DAT{47a6a179-a514-11e7-a94e-ec0d9a05c860}.TxR.1.regtrans-ms
+ NTUSER.DAT{47a6a179-a514-11e7-a94e-ec0d9a05c860}.TxR.2.regtrans-ms
+ NTUSER.DAT{47a6a179-a514-11e7-a94e-ec0d9a05c860}.TxR.blf
+ NTUSER.DAT{47a6a17a-a514-11e7-a94e-ec0d9a05c860}.TM.blf
+ NTUSER.DAT{47a6a17a-a514-11e7-a94e-ec0d9a05c860}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{47a6a17a-a514-11e7-a94e-ec0d9a05c860}.TMContainer00000000000000000002.regtrans-ms
+ ntuser.ini
+ OneDrive/
+ Pictures/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~
+$ cd exam-git
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git
+$ git init
+Initialized empty Git repository in C:/Users/kanishka/exam-git/.git/
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ ls -a
+./  ../  .git/
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git config --global user.name examuser
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git config --global user.email examuser@exam.com
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git .etc/config
+git: '.etc/config' is not a git command. See 'git --help'.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git --help
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git /etc/config
+error: cannot spawn git-C:/Program Files/Git/etc/config: Invalid argument
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git etc/config
+git: 'etc/config' is not a git command. See 'git --help'.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git ./etc/config
+git: './etc/config' is not a git command. See 'git --help'.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ vi README.md
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git add .
+warning: LF will be replaced by CRLF in README.md.
+The file will have its original line endings in your working directory.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git add .
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git commit -m "README file created"
+[master (root-commit) 0b55112] README file created
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git log --oneline
+0b55112 (HEAD -> master) README file created
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git add remote origin https://bitbucket.org/kanishka3590/exam_git/src
+fatal: pathspec 'remote' did not match any files
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git remote
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git add remote origin https://bitbucket.org/kanishka3590/exam_git/src
+fatal: pathspec 'remote' did not match any files
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git remote add origin https://bitbucket.org/kanishka3590/exam_git/src
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git remote
+origin
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git push -u origin master
+fatal: ArgumentOutOfRangeException encountered.
+   Specified argument was out of the range of valid values.
+Parameter name: resultType
+Username for 'https://bitbucket.org': kanishka3590
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 249 bytes | 62.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://bitbucket.org/kanishka3590/exam_git/src
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git branch dev
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git branch test
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git branch temp
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git branch
+  dev
+* master
+  temp
+  test
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git branch checkout dev
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git checkout dev
+Switched to branch 'dev'
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (dev)
+$ touch sample{1..10}.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (dev)
+$ ls
+README.md    sample10.txt  sample3.txt  sample5.txt  sample7.txt  sample9.txt
+sample1.txt  sample2.txt   sample4.txt  sample6.txt  sample8.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (dev)
+$ git add .
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (dev)
+$ git commit -m "10 Sample files are created"
+[dev b952a31] 10 Sample files are created
+ 10 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 sample1.txt
+ create mode 100644 sample10.txt
+ create mode 100644 sample2.txt
+ create mode 100644 sample3.txt
+ create mode 100644 sample4.txt
+ create mode 100644 sample5.txt
+ create mode 100644 sample6.txt
+ create mode 100644 sample7.txt
+ create mode 100644 sample8.txt
+ create mode 100644 sample9.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (dev)
+$ git log --oneline
+b952a31 (HEAD -> dev) 10 Sample files are created
+0b55112 (origin/master, test, temp, master, checkout) README file created
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (dev)
+$ vi sample.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (dev)
+$ vi sample1.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (dev)
+$ git add .
+warning: LF will be replaced by CRLF in sample1.txt.
+The file will have its original line endings in your working directory.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (dev)
+$ git add .
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (dev)
+$ git commit -m "Sample1 file modified by dev"
+[dev 04a935e] Sample1 file modified by dev
+ 1 file changed, 2 insertions(+)
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (dev)
+$ git log --oneline
+04a935e (HEAD -> dev) Sample1 file modified by dev
+b952a31 10 Sample files are created
+0b55112 (origin/master, test, temp, master, checkout) README file created
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (dev)
+$ vi sample2.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (dev)
+$ git add .
+warning: LF will be replaced by CRLF in sample2.txt.
+The file will have its original line endings in your working directory.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (dev)
+$ git add .
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (dev)
+$ git commit -m "Sample2 file modified by dev"
+[dev f631ae4] Sample2 file modified by dev
+ 1 file changed, 2 insertions(+)
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (dev)
+$ vi sample3.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (dev)
+$ git add .
+warning: LF will be replaced by CRLF in sample3.txt.
+The file will have its original line endings in your working directory.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (dev)
+$ git add .
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (dev)
+$ git commit -m "Sample3 file modified by dev"
+[dev bd2f381] Sample3 file modified by dev
+ 1 file changed, 2 insertions(+)
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (dev)
+$ git log --oneline
+bd2f381 (HEAD -> dev) Sample3 file modified by dev
+f631ae4 Sample2 file modified by dev
+04a935e Sample1 file modified by dev
+b952a31 10 Sample files are created
+0b55112 (origin/master, test, temp, master, checkout) README file created
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (dev)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git log --oneline
+0b55112 (HEAD -> master, origin/master, test, temp, checkout) README file created
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git checkout test
+Switched to branch 'test'
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (test)
+$ git log --oneline
+0b55112 (HEAD -> test, origin/master, temp, master, checkout) README file created
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (test)
+$ vi sample4.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (test)
+$ git add .
+warning: LF will be replaced by CRLF in sample4.txt.
+The file will have its original line endings in your working directory.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (test)
+$ git add .
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (test)
+$ git commit -m "Sample4 file modified by test"
+[test d838b0b] Sample4 file modified by test
+ 1 file changed, 2 insertions(+)
+ create mode 100644 sample4.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (test)
+$ vi sample5.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (test)
+$ git add .
+warning: LF will be replaced by CRLF in sample5.txt.
+The file will have its original line endings in your working directory.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (test)
+$ git add .
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (test)
+$ git commit -m "Sample5 file modified by test"
+[test 412ef28] Sample5 file modified by test
+ 1 file changed, 5 insertions(+)
+ create mode 100644 sample5.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (test)
+$ vi sample6.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (test)
+$ git add .
+warning: LF will be replaced by CRLF in sample6.txt.
+The file will have its original line endings in your working directory.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (test)
+$ git add .
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (test)
+$ git commit -m "Sample6 file modified by test"
+[test 82fac3e] Sample6 file modified by test
+ 1 file changed, 2 insertions(+)
+ create mode 100644 sample6.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (test)
+$ git log --oneline
+82fac3e (HEAD -> test) Sample6 file modified by test
+412ef28 Sample5 file modified by test
+d838b0b Sample4 file modified by test
+0b55112 (origin/master, temp, master, checkout) README file created
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (test)
+$ git checkout temp
+Switched to branch 'temp'
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (temp)
+$ vi sample7.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (temp)
+$ git add .
+warning: LF will be replaced by CRLF in sample7.txt.
+The file will have its original line endings in your working directory.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (temp)
+$ git add .
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (temp)
+$ git commit -m "Sample7 file modified by temp"
+[temp 98fae7e] Sample7 file modified by temp
+ 1 file changed, 3 insertions(+)
+ create mode 100644 sample7.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (temp)
+$ vi sample8.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (temp)
+$ git add .
+warning: LF will be replaced by CRLF in sample8.txt.
+The file will have its original line endings in your working directory.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (temp)
+$ git add .
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (temp)
+$ git commit -m "Sample8 file modified by temp"
+[temp 171e7fa] Sample8 file modified by temp
+ 1 file changed, 2 insertions(+)
+ create mode 100644 sample8.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (temp)
+$ git log --oneline
+171e7fa (HEAD -> temp) Sample8 file modified by temp
+98fae7e Sample7 file modified by temp
+0b55112 (origin/master, master, checkout) README file created
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (temp)
+$ vi sample9.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (temp)
+$ git add .
+warning: LF will be replaced by CRLF in sample9.txt.
+The file will have its original line endings in your working directory.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (temp)
+$ git add .
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (temp)
+$ git commit -m "Sample9 file modified by temp"
+[temp d0339df] Sample9 file modified by temp
+ 1 file changed, 2 insertions(+)
+ create mode 100644 sample9.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (temp)
+$ git log --oneline
+d0339df (HEAD -> temp) Sample9 file modified by temp
+171e7fa Sample8 file modified by temp
+98fae7e Sample7 file modified by temp
+0b55112 (origin/master, master, checkout) README file created
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (temp)
+$ git rebase master
+Current branch temp is up to date.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (temp)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git rebase master
+Current branch master is up to date.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git log --oneline
+0b55112 (HEAD -> master, origin/master, checkout) README file created
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git checkout dev
+Switched to branch 'dev'
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (dev)
+$ git merge master
+Already up to date.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (dev)
+$ git log --oneline
+bd2f381 (HEAD -> dev) Sample3 file modified by dev
+f631ae4 Sample2 file modified by dev
+04a935e Sample1 file modified by dev
+b952a31 10 Sample files are created
+0b55112 (origin/master, master, checkout) README file created
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (dev)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git rebase dev
+First, rewinding head to replay your work on top of it...
+Fast-forwarded master to dev.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git log --oneline
+bd2f381 (HEAD -> master, dev) Sample3 file modified by dev
+f631ae4 Sample2 file modified by dev
+04a935e Sample1 file modified by dev
+b952a31 10 Sample files are created
+0b55112 (origin/master, checkout) README file created
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git rebase test
+First, rewinding head to replay your work on top of it...
+Applying: 10 Sample files are created
+Using index info to reconstruct a base tree...
+Falling back to patching base and 3-way merge...
+Applying: Sample1 file modified by dev
+Applying: Sample2 file modified by dev
+Applying: Sample3 file modified by dev
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git log --oneline
+6acfee7 (HEAD -> master) Sample3 file modified by dev
+208c683 Sample2 file modified by dev
+ae41b12 Sample1 file modified by dev
+13301f0 10 Sample files are created
+82fac3e (test) Sample6 file modified by test
+412ef28 Sample5 file modified by test
+d838b0b Sample4 file modified by test
+0b55112 (origin/master, checkout) README file created
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git rebase temp
+First, rewinding head to replay your work on top of it...
+Applying: Sample4 file modified by test
+Applying: Sample5 file modified by test
+Applying: Sample6 file modified by test
+Applying: 10 Sample files are created
+Using index info to reconstruct a base tree...
+Falling back to patching base and 3-way merge...
+Applying: Sample1 file modified by dev
+Applying: Sample2 file modified by dev
+Applying: Sample3 file modified by dev
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git log --oneline
+70d7b8d (HEAD -> master) Sample3 file modified by dev
+36c66c1 Sample2 file modified by dev
+bc13d09 Sample1 file modified by dev
+31f4699 10 Sample files are created
+593848e Sample6 file modified by test
+26bfae3 Sample5 file modified by test
+9e64af6 Sample4 file modified by test
+d0339df (temp) Sample9 file modified by temp
+171e7fa Sample8 file modified by temp
+98fae7e Sample7 file modified by temp
+0b55112 (origin/master, checkout) README file created
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git checkout dev
+Switched to branch 'dev'
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (dev)
+$ git log --oneline
+bd2f381 (HEAD -> dev) Sample3 file modified by dev
+f631ae4 Sample2 file modified by dev
+04a935e Sample1 file modified by dev
+b952a31 10 Sample files are created
+0b55112 (origin/master, checkout) README file created
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (dev)
+$ git merge master
+Auto-merging sample9.txt
+Auto-merging sample8.txt
+Auto-merging sample7.txt
+Auto-merging sample6.txt
+Auto-merging sample5.txt
+Auto-merging sample4.txt
+Merge made by the 'recursive' strategy.
+ sample4.txt | 2 ++
+ sample5.txt | 5 +++++
+ sample6.txt | 2 ++
+ sample7.txt | 3 +++
+ sample8.txt | 2 ++
+ sample9.txt | 2 ++
+ 6 files changed, 16 insertions(+)
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (dev)
+$ git log --oneline
+6b7afaf (HEAD -> dev) Merge branch 'master' into dev
+70d7b8d (master) Sample3 file modified by dev
+36c66c1 Sample2 file modified by dev
+bc13d09 Sample1 file modified by dev
+31f4699 10 Sample files are created
+593848e Sample6 file modified by test
+26bfae3 Sample5 file modified by test
+9e64af6 Sample4 file modified by test
+d0339df (temp) Sample9 file modified by temp
+171e7fa Sample8 file modified by temp
+98fae7e Sample7 file modified by temp
+bd2f381 Sample3 file modified by dev
+f631ae4 Sample2 file modified by dev
+04a935e Sample1 file modified by dev
+b952a31 10 Sample files are created
+0b55112 (origin/master, checkout) README file created
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (dev)
+$ git checkout temp
+Switched to branch 'temp'
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (temp)
+$ git log --oneline
+d0339df (HEAD -> temp) Sample9 file modified by temp
+171e7fa Sample8 file modified by temp
+98fae7e Sample7 file modified by temp
+0b55112 (origin/master, checkout) README file created
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (temp)
+$ git merge master
+Updating d0339df..70d7b8d
+Fast-forward
+ sample1.txt  | 2 ++
+ sample10.txt | 0
+ sample2.txt  | 2 ++
+ sample3.txt  | 2 ++
+ sample4.txt  | 2 ++
+ sample5.txt  | 5 +++++
+ sample6.txt  | 2 ++
+ 7 files changed, 15 insertions(+)
+ create mode 100644 sample1.txt
+ create mode 100644 sample10.txt
+ create mode 100644 sample2.txt
+ create mode 100644 sample3.txt
+ create mode 100644 sample4.txt
+ create mode 100644 sample5.txt
+ create mode 100644 sample6.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (temp)
+$ git log --oneline
+70d7b8d (HEAD -> temp, master) Sample3 file modified by dev
+36c66c1 Sample2 file modified by dev
+bc13d09 Sample1 file modified by dev
+31f4699 10 Sample files are created
+593848e Sample6 file modified by test
+26bfae3 Sample5 file modified by test
+9e64af6 Sample4 file modified by test
+d0339df Sample9 file modified by temp
+171e7fa Sample8 file modified by temp
+98fae7e Sample7 file modified by temp
+0b55112 (origin/master, checkout) README file created
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (temp)
+$ git checkout test
+Switched to branch 'test'
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (test)
+$ git log --oneline
+82fac3e (HEAD -> test) Sample6 file modified by test
+412ef28 Sample5 file modified by test
+d838b0b Sample4 file modified by test
+0b55112 (origin/master, checkout) README file created
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (test)
+$ git merge master
+Merge made by the 'recursive' strategy.
+ sample1.txt  | 2 ++
+ sample10.txt | 0
+ sample2.txt  | 2 ++
+ sample3.txt  | 2 ++
+ sample7.txt  | 3 +++
+ sample8.txt  | 2 ++
+ sample9.txt  | 2 ++
+ 7 files changed, 13 insertions(+)
+ create mode 100644 sample1.txt
+ create mode 100644 sample10.txt
+ create mode 100644 sample2.txt
+ create mode 100644 sample3.txt
+ create mode 100644 sample7.txt
+ create mode 100644 sample8.txt
+ create mode 100644 sample9.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (test)
+$ git log --oneline
+fecc640 (HEAD -> test) Merge branch 'master' into test
+70d7b8d (temp, master) Sample3 file modified by dev
+36c66c1 Sample2 file modified by dev
+bc13d09 Sample1 file modified by dev
+31f4699 10 Sample files are created
+593848e Sample6 file modified by test
+26bfae3 Sample5 file modified by test
+9e64af6 Sample4 file modified by test
+d0339df Sample9 file modified by temp
+171e7fa Sample8 file modified by temp
+98fae7e Sample7 file modified by temp
+82fac3e Sample6 file modified by test
+412ef28 Sample5 file modified by test
+d838b0b Sample4 file modified by test
+0b55112 (origin/master, checkout) README file created
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (test)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 10 commits.
+  (use "git push" to publish your local commits)
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git log --oneline
+70d7b8d (HEAD -> master, temp) Sample3 file modified by dev
+36c66c1 Sample2 file modified by dev
+bc13d09 Sample1 file modified by dev
+31f4699 10 Sample files are created
+593848e Sample6 file modified by test
+26bfae3 Sample5 file modified by test
+9e64af6 Sample4 file modified by test
+d0339df Sample9 file modified by temp
+171e7fa Sample8 file modified by temp
+98fae7e Sample7 file modified by temp
+0b55112 (origin/master, checkout) README file created
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git push -u origin master
+fatal: ArgumentOutOfRangeException encountered.
+   Specified argument was out of the range of valid values.
+Parameter name: resultType
+Username for 'https://bitbucket.org': kanishka3590
+Counting objects: 30, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (25/25), done.
+Writing objects: 100% (30/30), 2.62 KiB | 72.00 KiB/s, done.
+Total 30 (delta 9), reused 0 (delta 0)
+To https://bitbucket.org/kanishka3590/exam_git/src
+   0b55112..70d7b8d  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git checkout dev
+Switched to branch 'dev'
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (dev)
+$ git push -u origin dev
+fatal: ArgumentOutOfRangeException encountered.
+   Specified argument was out of the range of valid values.
+Parameter name: resultType
+Username for 'https://bitbucket.org': kanishka3590
+Counting objects: 9, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 990 bytes | 61.00 KiB/s, done.
+Total 9 (delta 4), reused 0 (delta 0)
+remote:
+remote: Create pull request for dev:
+remote:   https://bitbucket.org/kanishka3590/exam_git/pull-requests/new?source=dev&t=1
+remote:
+To https://bitbucket.org/kanishka3590/exam_git/src
+ * [new branch]      dev -> dev
+Branch 'dev' set up to track remote branch 'dev' from 'origin'.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (dev)
+$ git checkout test
+Switched to branch 'test'
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (test)
+$ git push -u origin test
+fatal: ArgumentOutOfRangeException encountered.
+   Specified argument was out of the range of valid values.
+Parameter name: resultType
+Username for 'https://bitbucket.org': kanishka3590
+Counting objects: 7, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 766 bytes | 85.00 KiB/s, done.
+Total 7 (delta 3), reused 0 (delta 0)
+remote:
+remote: Create pull request for test:
+remote:   https://bitbucket.org/kanishka3590/exam_git/pull-requests/new?source=test&t=1
+remote:
+To https://bitbucket.org/kanishka3590/exam_git/src
+ * [new branch]      test -> test
+Branch 'test' set up to track remote branch 'test' from 'origin'.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (test)
+$ git checkout temp
+Switched to branch 'temp'
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (temp)
+$ git push -u origin temp
+fatal: ArgumentOutOfRangeException encountered.
+   Specified argument was out of the range of valid values.
+Parameter name: resultType
+Username for 'https://bitbucket.org': kanishka3590
+Total 0 (delta 0), reused 0 (delta 0)
+remote:
+remote: Create pull request for temp:
+remote:   https://bitbucket.org/kanishka3590/exam_git/pull-requests/new?source=temp&t=1
+remote:
+To https://bitbucket.org/kanishka3590/exam_git/src
+ * [new branch]      temp -> temp
+Branch 'temp' set up to track remote branch 'temp' from 'origin'.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (temp)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ cd ..
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~
+$ ls
+'3D Objects'/
+ AppData/
+'Application Data'@
+ bootstrap/
+ Contacts/
+ Cookies@
+ Desktop/
+ Documents/
+ Downloads/
+ exam-git/
+ Favorites/
+ git-dir/
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ MicrosoftEdgeBackups/
+ Music/
+'My Documents'@
+ NetHood@
+ NTUSER.DAT
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ NTUSER.DAT{47a6a179-a514-11e7-a94e-ec0d9a05c860}.TxR.0.regtrans-ms
+ NTUSER.DAT{47a6a179-a514-11e7-a94e-ec0d9a05c860}.TxR.1.regtrans-ms
+ NTUSER.DAT{47a6a179-a514-11e7-a94e-ec0d9a05c860}.TxR.2.regtrans-ms
+ NTUSER.DAT{47a6a179-a514-11e7-a94e-ec0d9a05c860}.TxR.blf
+ NTUSER.DAT{47a6a17a-a514-11e7-a94e-ec0d9a05c860}.TM.blf
+ NTUSER.DAT{47a6a17a-a514-11e7-a94e-ec0d9a05c860}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{47a6a17a-a514-11e7-a94e-ec0d9a05c860}.TMContainer00000000000000000002.regtrans-ms
+ ntuser.ini
+ OneDrive/
+ Pictures/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~
+$ cd .ssh
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/.ssh
+$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/kanishka/.ssh/id_rsa): exam-key
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in exam-key.
+Your public key has been saved in exam-key.pub.
+The key fingerprint is:
+SHA256:tHPzNJEO/gPUhEZjU80/er948vaQ8SthOQ7lpS+BBm8 kanishka@DESKTOP-E3NRGRV
+The key's randomart image is:
++---[RSA 2048]----+
+|         .=ooo   |
+|         .o= .o  |
+|        ..o +  . |
+|       . = o o o.|
+|        S B B * .|
+|         o E @ = |
+|          o B O o|
+|             *.=o|
+|             .B++|
++----[SHA256]-----+
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/.ssh
+$ key
+bash: key: command not found
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/.ssh
+$ cat key
+cat: key: No such file or directory
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/.ssh
+$ cat git key
+cat: git: No such file or directory
+cat: key: No such file or directory
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/.ssh
+$ cat git exam-key
+cat: git: No such file or directory
+-----BEGIN RSA PRIVATE KEY-----
+MIIEpAIBAAKCAQEAvn1jvzrh6U8koLLQfnf2ztvRgxrey1HCDNxXatcpk8n7NrIA
+I3HvuW2biEVD2VC2HY8cxFG4smrCeskMlHs7I/uTPp3kfuZLWuoMh+b+qISBbr0I
+vD/grHJjnM0NS0yXog9mINYy1WjeR8qJu3dAKtG2yYaFaJkPwsyrtwM44VYx2I+I
+7qvqtEdrjdkF6JbiRWPdxLVCyU+gTANjbDhvyhyMyndjuic6dn1rHuF0vYMkuM48
+5I8kO2QTjGmqD43iedwgM4S9aAOZshrRb9cd67DWqFo54APHlaKttZmWBftk562i
+QsPW6JOYd1iX0CIGLqjaxP2YNtHdCM9XeqrGhwIDAQABAoIBABGoV+WzFJvm7TNE
+QBVpE2TLdZlclUhtlLpSdnv94+nCMFo6l86xUhJzOZahLQ/o7mjBCl6cYK2RPePZ
+3SOqZKoKOPT19+dXe6a6yVyTqgl+9uyH81ZX6YCyvc8cJt5TBD9OhB4JHP8xUGGB
+QdEx1a3icLovkRBIF/DrvgMh9lTU2pjShU51XRDoEtKg+SHX7sByyPpzFaamMYOQ
+0ekmVCh9En32CXClf7Ewk7CgllSEV3P3mF9dDdCPymAlLVw/qUrh7mA2dLGJi9jD
+6BcNS+KfsI5B2+EFCJaG3nk83Gs4XQqBTFnfgzdxN81Rv0rrI8yVAPJ8PrxavyFu
+iupnVqECgYEA6lMxo6NzL0UTlZnOWckPAW7bC63+8pMJDZdxjQzFtk9W28xcYEg0
+7y4N356kJY1CPL2cpkS4F6YGVQgM4S8HrGV1zSz/BF5tEbiCBkNm3uENt8GB847P
+BAghv6aU+hnrd/iqxk0tYjAQwt8b7ei+JbSlQBq+rRNGT/Xv9yTGKdcCgYEA0Bwu
+OuGBp32mjVENlw+ZYiY9lTqSEZpy5bsr7Elw5kgx0r7KAO4X3l1InNqeMNfmZBH9
+R0bSkycEtIhXqhjSgPtGXxJJVxrFX+MFLwE6kAmvlijx49diH3p6sXT7hXVHaaxf
+qEnfkJ6I2Z4SPsGSiaNRyyW/8Q4o7Fg03RJqktECgYEAwCGGyg3zHAcfj8KVF7lr
+vFkQ8fqw2GUHP0W1rVmTo3BaX86oz6lk/dhdN8X0AXZZoUQ3dX1TFNDk0EPRi7Hs
+MMbgWGNUllh2Rdlrg4cwif8uKEVaMEIgK8YfJe2IqaknES+rlv0hASk4FRCq7d+w
+SWpdNLq5LWBofpfBMnvMn/ECgYBZzH8qSxo+IprWia36i/Gch3G1TdOvotyHQq+e
+QsZjp61QCaFyq0pDWi8196Og4dh5P8Xxlp7QflqqZ9akABf9Le/coDBjVJrsWDJp
+aPdTJcrNWZeev9aITLpajmbl3IhXEdko7c95QN8+P9YRnEdV+tIVfZGIO5ru+NS+
+u+6esQKBgQCN6tVN5BmMj4qdfA1eft+F2Dg3fCqYEaC2JQb1aTpmMJtI73jmmnok
+/ui43YE32RRSkxuDQeO07bq7thswyzxDiNt+ITKY6R+/p4laSItrN5XFEcoiByP/
+gK2HzMQ1qnGk10YHw3Fr6cg6vaBSJ0jIhKrtLzo1cceBjvIdRdZydA==
+-----END RSA PRIVATE KEY-----
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/.ssh
+$ cat git exam-key.pub
+cat: git: No such file or directory
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC+fWO/OuHpTySgstB+d/bO29GDGt7LUcIM3Fdq1ymTyfs2sgAjce+5bZuIRUPZULYdjxzEUbiyasJ6yQyUezsj+5M+neR+5kta6gyH5v6ohIFuvQi8P+CscmOczQ1LTJeiD2Yg1jLVaN5Hyom7d0Aq0bbJhoVomQ/CzKu3AzjhVjHYj4juq+q0R2uN2QXoluJFY93EtULJT6BMA2NsOG/KHIzKd2O6Jzp2fWse4XS9gyS4zjzkjyQ7ZBOMaaoPjeJ53CAzhL1oA5myGtFv1x3rsNaoWjngA8eVoq21mZYF+2TnraJCw9bok5h3WJfQIgYuqNrE/Zg20d0Iz1d6qsaH kanishka@DESKTOP-E3NRGRV
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/.ssh
+$ cd ..
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~
+$ cd exam-git
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git log --oneline
+70d7b8d (HEAD -> master, origin/temp, origin/master, temp) Sample3 file modified by dev
+36c66c1 Sample2 file modified by dev
+bc13d09 Sample1 file modified by dev
+31f4699 10 Sample files are created
+593848e Sample6 file modified by test
+26bfae3 Sample5 file modified by test
+9e64af6 Sample4 file modified by test
+d0339df Sample9 file modified by temp
+171e7fa Sample8 file modified by temp
+98fae7e Sample7 file modified by temp
+0b55112 (checkout) README file created
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ vi sample10.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git add .
+warning: LF will be replaced by CRLF in sample10.txt.
+The file will have its original line endings in your working directory.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git add .
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git commit -m "Sample10 file modified by master"
+[master 752f4a3] Sample10 file modified by master
+ 1 file changed, 2 insertions(+)
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git log --oneline
+752f4a3 (HEAD -> master) Sample10 file modified by master
+70d7b8d (origin/temp, origin/master, temp) Sample3 file modified by dev
+36c66c1 Sample2 file modified by dev
+bc13d09 Sample1 file modified by dev
+31f4699 10 Sample files are created
+593848e Sample6 file modified by test
+26bfae3 Sample5 file modified by test
+9e64af6 Sample4 file modified by test
+d0339df Sample9 file modified by temp
+171e7fa Sample8 file modified by temp
+98fae7e Sample7 file modified by temp
+0b55112 (checkout) README file created
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git push -u origin master
+fatal: ArgumentOutOfRangeException encountered.
+   Specified argument was out of the range of valid values.
+Parameter name: resultType
+Username for 'https://bitbucket.org': kanishka3590
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 324 bytes | 64.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+To https://bitbucket.org/kanishka3590/exam_git/src
+   70d7b8d..752f4a3  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git checkout dev
+Switched to branch 'dev'
+Your branch is up to date with 'origin/dev'.
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (dev)
+$ git pull origin master
+fatal: ArgumentOutOfRangeException encountered.
+   Specified argument was out of the range of valid values.
+Parameter name: resultType
+Username for 'https://bitbucket.org': kanishka3590
+From https://bitbucket.org/kanishka3590/exam_git/src
+ * branch            master     -> FETCH_HEAD
+Merge made by the 'recursive' strategy.
+ sample10.txt | 2 ++
+ 1 file changed, 2 insertions(+)
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (dev)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git /etc/gitconfig
+error: cannot spawn git-C:/Program Files/Git/etc/gitconfig: Invalid argument
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ cat /etc/gitconfig
+cat: /etc/gitconfig: No such file or directory
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git config --system --list
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+http.sslbackend=openssl
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+credential.helper=manager
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git config --global --list
+user.name=examuser
+user.email=examuser@exam.com
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git config --list
+core.symlinks=false
+core.autocrlf=true
+core.fscache=true
+color.diff=auto
+color.status=auto
+color.branch=auto
+color.interactive=true
+help.format=html
+rebase.autosquash=true
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+http.sslbackend=openssl
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+credential.helper=manager
+user.name=examuser
+user.email=examuser@exam.com
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git config --local --list
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+remote.origin.url=https://bitbucket.org/kanishka3590/exam_git/src
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.master.remote=origin
+branch.master.merge=refs/heads/master
+branch.dev.remote=origin
+branch.dev.merge=refs/heads/dev
+branch.test.remote=origin
+branch.test.merge=refs/heads/test
+branch.temp.remote=origin
+branch.temp.merge=refs/heads/temp
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git config --local user.name examuser2
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git config --local user.email examuser2@exam.com
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git checkout dev
+Switched to branch 'dev'
+Your branch is ahead of 'origin/dev' by 2 commits.
+  (use "git push" to publish your local commits)
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (dev)
+$ git log --oneline
+e3c736d (HEAD -> dev) Merge branch 'master' of https://bitbucket.org/kanishka3590/exam_git/src into dev
+752f4a3 (origin/master, master) Sample10 file modified by master
+6b7afaf (origin/dev) Merge branch 'master' into dev
+70d7b8d (origin/temp, temp) Sample3 file modified by dev
+36c66c1 Sample2 file modified by dev
+bc13d09 Sample1 file modified by dev
+31f4699 10 Sample files are created
+593848e Sample6 file modified by test
+26bfae3 Sample5 file modified by test
+9e64af6 Sample4 file modified by test
+d0339df Sample9 file modified by temp
+171e7fa Sample8 file modified by temp
+98fae7e Sample7 file modified by temp
+bd2f381 Sample3 file modified by dev
+f631ae4 Sample2 file modified by dev
+04a935e Sample1 file modified by dev
+b952a31 10 Sample files are created
+0b55112 (checkout) README file created
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (dev)
+$ vi sample10.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (dev)
+$ git add .
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (dev)
+$ git commit -m "Sample10 file modified by dev"
+[dev 89cf80e] Sample10 file modified by dev
+ 1 file changed, 1 insertion(+)
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (dev)
+$ git log --oneline
+89cf80e (HEAD -> dev) Sample10 file modified by dev
+e3c736d Merge branch 'master' of https://bitbucket.org/kanishka3590/exam_git/src into dev
+752f4a3 (origin/master, master) Sample10 file modified by master
+6b7afaf (origin/dev) Merge branch 'master' into dev
+70d7b8d (origin/temp, temp) Sample3 file modified by dev
+36c66c1 Sample2 file modified by dev
+bc13d09 Sample1 file modified by dev
+31f4699 10 Sample files are created
+593848e Sample6 file modified by test
+26bfae3 Sample5 file modified by test
+9e64af6 Sample4 file modified by test
+d0339df Sample9 file modified by temp
+171e7fa Sample8 file modified by temp
+98fae7e Sample7 file modified by temp
+bd2f381 Sample3 file modified by dev
+f631ae4 Sample2 file modified by dev
+04a935e Sample1 file modified by dev
+b952a31 10 Sample files are created
+0b55112 (checkout) README file created
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (dev)
+$ git push -u origin master
+fatal: ArgumentOutOfRangeException encountered.
+   Specified argument was out of the range of valid values.
+Parameter name: resultType
+Username for 'https://bitbucket.org': kanishka3590
+To https://bitbucket.org/kanishka3590/exam_git/src
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://bitbucket.org/kanishka3590/exam_git/src'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (dev)
+$ git log --oneline | wl
+bash: wl: command not found
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (dev)
+$ git log --oneline|wl
+bash: wl: command not found
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (dev)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git log --oneline | wc -l
+12
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git checkout dev
+Switched to branch 'dev'
+Your branch is ahead of 'origin/dev' by 3 commits.
+  (use "git push" to publish your local commits)
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (dev)
+$ git log --oneline | wc -l
+19
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (dev)
+$ git checkout test
+Switched to branch 'test'
+Your branch is up to date with 'origin/test'.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (test)
+$ git log --oneline | wc -l
+15
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (test)
+$ git checkout temp
+Switched to branch 'temp'
+Your branch is up to date with 'origin/temp'.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (temp)
+$ git log --oneline | wc -l
+11
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (temp)
+$ git remote -v
+origin  https://bitbucket.org/kanishka3590/exam_git/src (fetch)
+origin  https://bitbucket.org/kanishka3590/exam_git/src (push)
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (temp)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git clone git@bitbucket.org:kanishka3590/exam_git.git
+Cloning into 'exam_git'...
+The authenticity of host 'bitbucket.org (104.192.143.2)' can't be established.
+RSA key fingerprint is SHA256:zzXQOXSRBEiUtuE8AikJYKwbHaxvSc0ojez9YXaGp1A.
+Are you sure you want to continue connecting (yes/no)? y
+Please type 'yes' or 'no': yes
+Warning: Permanently added 'bitbucket.org,104.192.143.2' (RSA) to the list of known hosts.
+git@bitbucket.org: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git remote -v
+origin  https://bitbucket.org/kanishka3590/exam_git/src (fetch)
+origin  https://bitbucket.org/kanishka3590/exam_git/src (push)
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git ls -la
+git: 'ls' is not a git command. See 'git --help'.
+
+The most similar command is
+        lfs
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ ls -la
+total 31
+drwxr-xr-x 1 kanishka 197121  0 Jul 14 13:03 ./
+drwxr-xr-x 1 kanishka 197121  0 Jul 14 12:50 ../
+drwxr-xr-x 1 kanishka 197121  0 Jul 14 13:03 .git/
+-rw-r--r-- 1 kanishka 197121 35 Jul 14 11:36 README.md
+-rw-r--r-- 1 kanishka 197121 58 Jul 14 12:03 sample1.txt
+-rw-r--r-- 1 kanishka 197121 60 Jul 14 13:03 sample10.txt
+-rw-r--r-- 1 kanishka 197121 62 Jul 14 12:03 sample2.txt
+-rw-r--r-- 1 kanishka 197121 53 Jul 14 12:03 sample3.txt
+-rw-r--r-- 1 kanishka 197121 57 Jul 14 12:02 sample4.txt
+-rw-r--r-- 1 kanishka 197121 67 Jul 14 12:02 sample5.txt
+-rw-r--r-- 1 kanishka 197121 49 Jul 14 12:02 sample6.txt
+-rw-r--r-- 1 kanishka 197121 50 Jul 14 12:03 sample7.txt
+-rw-r--r-- 1 kanishka 197121 45 Jul 14 12:03 sample8.txt
+-rw-r--r-- 1 kanishka 197121 41 Jul 14 12:03 sample9.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git push -u origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://bitbucket.org':
+error: unable to read askpass response from 'C:/Program Files/Git/mingw64/libexec/git-core/git-gui--askpass'
+Password for 'https://bitbucket.org':
+remote: Unauthorized
+fatal: Authentication failed for 'https://bitbucket.org/kanishka3590/exam_git/src/'
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git add remote origin2 git@bitbucket.org:kanishka3590/exam_git.git
+fatal: pathspec 'remote' did not match any files
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git add remote origin git@bitbucket.org:kanishka3590/exam_git.git
+fatal: pathspec 'remote' did not match any files
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git remote add origin2 git@bitbucket.org:kanishka3590/exam_git.git
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git push -u origin2 master
+Warning: Permanently added the RSA host key for IP address '104.192.143.1' to the list of known hosts.
+git@bitbucket.org: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git remote -v
+origin  https://bitbucket.org/kanishka3590/exam_git/src (fetch)
+origin  https://bitbucket.org/kanishka3590/exam_git/src (push)
+origin2 git@bitbucket.org:kanishka3590/exam_git.git (fetch)
+origin2 git@bitbucket.org:kanishka3590/exam_git.git (push)
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git branch
+  checkout
+  dev
+* master
+  temp
+  test
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git push -u origin2 dev
+Warning: Permanently added the RSA host key for IP address '104.192.143.3' to the list of known hosts.
+git@bitbucket.org: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git push -u origin2 test
+git@bitbucket.org: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git push -u origin2 temp
+git@bitbucket.org: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git remote -v
+origin  https://bitbucket.org/kanishka3590/exam_git/src (fetch)
+origin  https://bitbucket.org/kanishka3590/exam_git/src (push)
+origin2 git@bitbucket.org:kanishka3590/exam_git.git (fetch)
+origin2 git@bitbucket.org:kanishka3590/exam_git.git (push)
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$ git branch
+  checkout
+  dev
+* master
+  temp
+  test
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/exam-git (master)
+$

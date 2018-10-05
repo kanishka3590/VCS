@@ -1,0 +1,310 @@
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~
+$ cd git-dir
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ cd learngit
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ cd ..
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ cd learngit1
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ git log
+commit 314b8d0258d6fc5af774d668b37d9bdec3649308 (HEAD -> master, origin/master)
+Author: ka <kanishka.3590@gmail.com>
+Date:   Fri Jun 22 19:20:20 2018 +0530
+
+    Given the title to Demo2 html file
+
+commit 4a464d0b4346fb1d6a61a2283393e6eed989bc4c
+Author: ka <kanishka.3590@gmail.com>
+Date:   Fri Jun 22 19:17:57 2018 +0530
+
+    Demo2 html file created
+
+commit b53bfc1294dbd7f9bc3279f9fb072b9bc4904dfc
+Author: ka <kanishka.3590@gmail.com>
+Date:   Fri Jun 22 19:16:12 2018 +0530
+
+    Demo1 file created
+
+commit e330766fe498ca7b9d4eb312d8de4f0ebc1a7da6
+Author: ka <kanishka.3590@gmail.com>
+Date:   Fri Jun 22 19:10:42 2018 +0530
+
+    README file created
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ git clone https://github.com/kanishka3590/leargit-demo
+Cloning into 'leargit-demo'...
+remote: Counting objects: 14, done.
+remote: Compressing objects: 100% (7/7), done.
+remote: Total 14 (delta 2), reused 14 (delta 2), pack-reused 0
+Unpacking objects: 100% (14/14), done.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ cd
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~
+$ cd .ss
+bash: cd: .ss: No such file or directory
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~
+$ cd .ssh
+bash: cd: .ssh: No such file or directory
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~
+$ cd .ssh/
+bash: cd: .ssh/: No such file or directory
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~
+$ ls -la
+total 3923
+drwxr-xr-x 1 kanishka 197121       0 Jun 23 11:46  ./
+drwxr-xr-x 1 kanishka 197121       0 Jun 20 22:04  ../
+drwxr-xr-x 1 kanishka 197121       0 Jun 23 12:38  .atom/
+-rw-r--r-- 1 kanishka 197121    2499 Jun 23 01:14  .bash_history
+-rw-r--r-- 1 kanishka 197121      53 Jun 22 18:57  .gitconfig
+-rw-r--r-- 1 kanishka 197121      58 Jun 21 21:23  .minttyrc
+-rw-r--r-- 1 kanishka 197121   11568 Jun 22 19:19  .viminfo
+drwxr-xr-x 1 kanishka 197121       0 Jun 21 11:35 '3D Objects'/
+drwxr-xr-x 1 kanishka 197121       0 Jun 21 10:09  AppData/
+lrwxrwxrwx 1 kanishka 197121      33 Jun 21 10:09 'Application Data' -> /c/Users/kanishka/AppData/Roaming/
+drwxr-xr-x 1 kanishka 197121       0 Jun 21 11:35  Contacts/
+lrwxrwxrwx 1 kanishka 197121      61 Jun 21 10:09  Cookies -> /c/Users/kanishka/AppData/Local/Microsoft/Windows/INetCookies/
+drwxr-xr-x 1 kanishka 197121       0 Jun 21 11:57  Desktop/
+drwxr-xr-x 1 kanishka 197121       0 Jun 21 11:35  Documents/
+drwxr-xr-x 1 kanishka 197121       0 Jun 21 11:35  Downloads/
+drwxr-xr-x 1 kanishka 197121       0 Jun 21 11:35  Favorites/
+drwxr-xr-x 1 kanishka 197121       0 Jun 22 18:28  git-dir/
+drwxr-xr-x 1 kanishka 197121       0 Jun 23 12:34  IntelGraphicsProfiles/
+drwxr-xr-x 1 kanishka 197121       0 Jun 21 11:35  Links/
+lrwxrwxrwx 1 kanishka 197121      31 Jun 21 10:09 'Local Settings' -> /c/Users/kanishka/AppData/Local/
+drwxr-xr-x 1 kanishka 197121       0 Jun 20 21:44  MicrosoftEdgeBackups/
+drwxr-xr-x 1 kanishka 197121       0 Jun 21 11:35  Music/
+lrwxrwxrwx 1 kanishka 197121      27 Jun 21 10:09 'My Documents' -> /c/Users/kanishka/Documents/
+lrwxrwxrwx 1 kanishka 197121      69 Jun 21 10:09  NetHood -> '/c/Users/kanishka/AppData/Roaming/Microsoft/Windows/Network Shortcuts'/
+-rw-r--r-- 1 kanishka 197121 1572864 Jun 23 11:46  NTUSER.DAT
+-rw-r--r-- 1 kanishka 197121  462848 Jun 21 10:09  ntuser.dat.LOG1
+-rw-r--r-- 1 kanishka 197121  458752 Jun 21 10:09  ntuser.dat.LOG2
+-rw-r--r-- 1 kanishka 197121   65536 Jun 21 10:10  NTUSER.DAT{47a6a17a-a514-11e7-a94e-ec0d9a05c860}.TM.blf
+-rw-r--r-- 1 kanishka 197121  524288 Jun 21 10:10  NTUSER.DAT{47a6a17a-a514-11e7-a94e-ec0d9a05c860}.TMContainer00000000000000000001.regtrans-ms
+-rw-r--r-- 1 kanishka 197121  524288 Jun 21 10:10  NTUSER.DAT{47a6a17a-a514-11e7-a94e-ec0d9a05c860}.TMContainer00000000000000000002.regtrans-ms
+-rw-r--r-- 1 kanishka 197121      20 Jun 21 10:09  ntuser.ini
+drwxr-xr-x 1 kanishka 197121       0 Jun 23 11:01  OneDrive/
+drwxr-xr-x 1 kanishka 197121       0 Jun 22 20:00  Pictures/
+lrwxrwxrwx 1 kanishka 197121      69 Jun 21 10:09  PrintHood -> '/c/Users/kanishka/AppData/Roaming/Microsoft/Windows/Printer Shortcuts'/
+lrwxrwxrwx 1 kanishka 197121      58 Jun 21 10:09  Recent -> /c/Users/kanishka/AppData/Roaming/Microsoft/Windows/Recent/
+drwxr-xr-x 1 kanishka 197121       0 Jun 21 11:35 'Saved Games'/
+drwxr-xr-x 1 kanishka 197121       0 Jun 21 11:35  Searches/
+lrwxrwxrwx 1 kanishka 197121      58 Jun 21 10:09  SendTo -> /c/Users/kanishka/AppData/Roaming/Microsoft/Windows/SendTo/
+lrwxrwxrwx 1 kanishka 197121      62 Jun 21 10:09 'Start Menu' -> '/c/Users/kanishka/AppData/Roaming/Microsoft/Windows/Start Menu'/
+lrwxrwxrwx 1 kanishka 197121      61 Jun 21 10:09  Templates -> /c/Users/kanishka/AppData/Roaming/Microsoft/Windows/Templates/
+drwxr-xr-x 1 kanishka 197121       0 Jun 21 11:35  Videos/
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~
+$ pwd
+/c/Users/kanishka
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~
+$ mkdir .ss/
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~
+$ cd .ss
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/.ss
+$ mkdir .ssh/
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/.ss
+$ del .ssh/
+bash: del: command not found
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/.ss
+$ rm .ssh/
+rm: cannot remove '.ssh/': Is a directory
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/.ss
+$ cd ..
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~
+$ mkdir .ssh/
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~
+$ cd .ssh/
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/.ssh
+$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/kanishka/.ssh/id_rsa): git_key
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in git_key.
+Your public key has been saved in git_key.pub.
+The key fingerprint is:
+SHA256:b582NVHX52r+A1pw+eNMnzFGP8zpod8qY2+5jxP4qzM kanishka@DESKTOP-E3NRGRV
+The key's randomart image is:
++---[RSA 2048]----+
+|                .|
+|                =|
+|              .oo|
+|           . o...|
+|        S   o.=oo|
+|         .  .o*&.|
+|          o o=O+O|
+|         . oEo*Bo|
+|           o+XBO=|
++----[SHA256]-----+
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/.ssh
+$ ls
+git_key  git_key.pub
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/.ssh
+$ cat git-key
+cat: git-key: No such file or directory
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/.ssh
+$ git_key
+bash: git_key: command not found
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/.ssh
+$ cat git_key
+-----BEGIN RSA PRIVATE KEY-----
+MIIEpAIBAAKCAQEA3VNych8F0iHjflVfQ42RLYFn+meTzPi3OYN7ShhNcQl3Giev
+Zrnk5aCtqQEQnRIFB0kCwc9S1f8+9C2P1JFbg66l2GznCViPvdixOujq3FLMBfbt
+I4wSEbrkgq3kxyPUYFnPhdAPEyXsM7jcL+0canvB4hwC/Qlb2bOwJnU7PnxsLj2d
+K6k3aTvuLCM51CCFnYInskhgA9b9lyVT4RKKoQe39+Ra0l9PevVhnup/fv97Ljca
++aLjRxX8qmNl38AQiB3FsA62VBCHWHqEJREWGtbFszBxVTJV9dCjHxJut9tO2lSa
+Er2wYdSRCzww3XzQHyjZant/Cw/sPup2TRM06wIDAQABAoIBAGXeBoroJHG3D1IS
+USpyeiOLsCPckHaC8zIRhilwThR82si7A0wwu13FOqjSyKbCqHXV8OLrXaEJPhx8
+6/pWfNx7AfI/DYeLr30dw1Tt50tJAIauRC9cROTMNGjBSM8veoxuScm5HXceuTyF
+FTMp2y5Xj8FWSznTmOb2gVjyFDaJissv1VtCvvykYMJ0rzuq5qkyID96DKPA0JFb
+JgEqzS2xcHSrj1LzMOuRRhyCmx710VvvrNDyphjzqiCEexiR5A9C7FUBVTDYhVLR
+QmbnVpm45i5zcpZncrb86RVddFy/jSdscDt43ChlyfZJ7VJqethmxn1CwiaowsGD
+d/Rh18ECgYEA8iBot07ng0NC46O2g7He/1Pud0XtBjBJiFrl27WTWQYI3ALW1yg+
+GZ3POjniX26YqnWGNHr6hJ/JI1wa2qlo94KvGaLcZDLMIFOuoXC5Rdpo5U5Y8C28
+9G8R5VqH4GTjZT3/N35LQvz5BolWOoQE/214NxA87zifoAq6skWM3iMCgYEA6gHt
+eLGtFA5RDkbtW+6AYEPd9F+BTbEVUGrlAQtozWMyebp+JytqVcBXvL/nXmmtHk+l
+3GgwVq3fAHItjwFoRRwM1o4Dn7/+C1TbdQ1FeAvh4HeikjbRz6qHeUabg+IpJ5Lz
+UBzxDjpN9XnjN0EycwH/IXyOEor0NOV6EJ3l5pkCgYEAhMA4KajdTh6moeC0xOfU
+9/Cwojx4hBgdeOE9fYTEUN76JIZ5/GVYBvt7DtWFxAUDNxJQjp2OlQB2ayiooJKZ
+tnq0Pj4Iz/b57A91g5YmPqJNOMwH/0dUfkAXc8R7ExC9jFi9gVOBOC0y696IpHSV
+uOXwL2B7yD0nZ7v6OJvhbDkCgYEAsARjK7X6Cmv6bFLNl6j+x2pFOdvc1yOsdKDz
+QKXkXxmOjiHJYo01nurfFAsFbe7vWS1wBSoZshl29E7uFfNpCxLeVUTdVPyFiuB5
+csJYzsOhU8apcnHpv9r1rDOAJuOnMS1H96rNZ3ZTzaGxV46i8/88eWPHOgtrRZ6X
+AojCtYECgYA2Kw6ZlCPfO8+45wNbZJGfHHjhTe0/2tNjAtuMJ05HHsxAyUf6rNnK
+MRg4mQfuWZj82Z5Nh7gXnWR16fwO64/pY6UK+7HpRX6qNC+vm6uSFrYyQo/zsww0
+XlvSnNrYbEcHPinNEu4HqCC9AcP9xcLFtg5NjrI5XDl/OwAYRqWPyA==
+-----END RSA PRIVATE KEY-----
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/.ssh
+$ cat git_key.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDdU3JyHwXSIeN+VV9DjZEtgWf6Z5PM+Lc5g3tKGE1xCXcaJ69mueTloK2pARCdEgUHSQLBz1LV/z70LY/UkVuDrqXYbOcJWI+92LE66OrcUswF9u0jjBIRuuSCreTHI9RgWc+F0A8TJewzuNwv7Rxqe8HiHAL9CVvZs7AmdTs+fGwuPZ0rqTdpO+4sIznUIIWdgieySGAD1v2XJVPhEoqhB7f35FrSX0969WGe6n9+/3suNxr5ouNHFfyqY2XfwBCIHcWwDrZUEIdYeoQlERYa1sWzMHFVMlX10KMfEm63207aVJoSvbBh1JELPDDdfNAfKNlqe38LD+w+6nZNEzTr kanishka@DESKTOP-E3NRGRV
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/.ssh
+$ ^C
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/.ssh
+$ cd
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~
+$ cd git-dir
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ git clone git@github.com:kanishka3590/leargit-demo.git
+Cloning into 'leargit-demo'...
+The authenticity of host 'github.com (192.30.253.112)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no)? y
+Please type 'yes' or 'no': yes
+Warning: Permanently added 'github.com,192.30.253.112' (RSA) to the list of known hosts.
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+ka
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ git clone git@github.com:kanishka3590/leargit-demo.git learngit-demo-rename
+Cloning into 'learngit-demo-rename'...
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ ls
+bankers/  leargit3/  learngit/  learngit1/  learngit2/  wooper-prj/
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ cd leargit1
+bash: cd: leargit1: No such file or directory
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ cd learngit1
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ touch file{1..10}.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ vi file1.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ git add .
+warning: LF will be replaced by CRLF in file1.txt.
+The file will have its original line endings in your working directory.
+warning: adding embedded git repository: leargit-demo
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> leargit-demo
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached leargit-demo
+hint:
+hint: See "git help submodule" for more information.
+warning: adding embedded git repository: repo-pratice2
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ git add file1.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ git commit -m "File1 changed"
+[master 38b0036] File1 changed
+ 12 files changed, 3 insertions(+)
+ create mode 100644 file1.txt
+ create mode 100644 file10.txt
+ create mode 100644 file2.txt
+ create mode 100644 file3.txt
+ create mode 100644 file4.txt
+ create mode 100644 file5.txt
+ create mode 100644 file6.txt
+ create mode 100644 file7.txt
+ create mode 100644 file8.txt
+ create mode 100644 file9.txt
+ create mode 160000 leargit-demo
+ create mode 160000 repo-pratice2
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ git push -u origin master
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 486 bytes | 97.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/kanishka3590/leargit-demo
+   314b8d0..38b0036  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$

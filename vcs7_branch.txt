@@ -1,0 +1,880 @@
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git push -u origin master
+Counting objects: 6, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 811 bytes | 135.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/kanishka3590/learngit.git
+   4e717fe..a04835c  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ cd ..
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ cd leargit_clone
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (master)
+$ ls -la
+total 25
+drwxr-xr-x 1 kanishka 197121    0 Jun 26 13:35 ./
+drwxr-xr-x 1 kanishka 197121    0 Jun 25 15:53 ../
+drwxr-xr-x 1 kanishka 197121    0 Jun 26 13:35 .git/
+-rw-r--r-- 1 kanishka 197121   61 Jun 26 13:35 clone-testing.txt
+-rw-r--r-- 1 kanishka 197121   11 Jun 25 15:53 index.css
+-rw-r--r-- 1 kanishka 197121 2060 Jun 25 15:53 index.html
+-rw-r--r-- 1 kanishka 197121   18 Jun 25 15:53 index.js
+drwxr-xr-x 1 kanishka 197121    0 Jun 26 13:35 learngit/
+-rw-r--r-- 1 kanishka 197121   21 Jun 25 15:53 README.md
+-rw-r--r-- 1 kanishka 197121   21 Jun 25 15:53 sample.txt
+-rw-r--r-- 1 kanishka 197121  860 Jun 25 15:53 style.css
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (master)
+$ git pull origin master
+remote: Counting objects: 6, done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 6 (delta 2), reused 6 (delta 2), pack-reused 0
+Unpacking objects: 100% (6/6), done.
+From https://github.com/kanishka3590/learngit
+ * branch            master     -> FETCH_HEAD
+   4e717fe..a04835c  master     -> origin/master
+Updating 4e717fe..a04835c
+Fast-forward
+ dm1.txt | 0
+ dm2.txt | 0
+ dm3.txt | 0
+ dm4.txt | 0
+ dm5.txt | 0
+ 5 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 dm1.txt
+ create mode 100644 dm2.txt
+ create mode 100644 dm3.txt
+ create mode 100644 dm4.txt
+ create mode 100644 dm5.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (master)
+$ ls -la
+total 25
+drwxr-xr-x 1 kanishka 197121    0 Jun 26 14:24 ./
+drwxr-xr-x 1 kanishka 197121    0 Jun 25 15:53 ../
+drwxr-xr-x 1 kanishka 197121    0 Jun 26 14:24 .git/
+-rw-r--r-- 1 kanishka 197121   61 Jun 26 13:35 clone-testing.txt
+-rw-r--r-- 1 kanishka 197121    0 Jun 26 14:24 dm1.txt
+-rw-r--r-- 1 kanishka 197121    0 Jun 26 14:24 dm2.txt
+-rw-r--r-- 1 kanishka 197121    0 Jun 26 14:24 dm3.txt
+-rw-r--r-- 1 kanishka 197121    0 Jun 26 14:24 dm4.txt
+-rw-r--r-- 1 kanishka 197121    0 Jun 26 14:24 dm5.txt
+-rw-r--r-- 1 kanishka 197121   11 Jun 25 15:53 index.css
+-rw-r--r-- 1 kanishka 197121 2060 Jun 25 15:53 index.html
+-rw-r--r-- 1 kanishka 197121   18 Jun 25 15:53 index.js
+drwxr-xr-x 1 kanishka 197121    0 Jun 26 13:35 learngit/
+-rw-r--r-- 1 kanishka 197121   21 Jun 25 15:53 README.md
+-rw-r--r-- 1 kanishka 197121   21 Jun 25 15:53 sample.txt
+-rw-r--r-- 1 kanishka 197121  860 Jun 25 15:53 style.css
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (master)
+$ cd
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~
+$ cd git-dir
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ git branch -a
+fatal: not a git repository (or any of the parent directories): .git
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ cd learngit
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git branch -a
+* master
+  remotes/origin/master
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git branch -r
+  origin/master
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ cd ..
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ cd learngit_clone
+bash: cd: learngit_clone: No such file or directory
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ ls
+bankers/  leargit_clone/  leargit-demo/  learngit/  learngit1/  wooper-prj/
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ cd leargit_clone
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (master)
+$ git branch
+* master
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (master)
+$ git log --oneline
+a04835c (HEAD -> master, origin/master, origin/HEAD) an updated commit message
+c8c0737 File commited to check remove opration
+5e9f92d New files created
+4e717fe clone-testing.txt
+33428d8 css index
+95a40cb CSS For footer links added
+04cffe5 CSS For footer added
+517cb1c CSS For header links added
+8aae0e7 CSS For header added
+0c4ed3a HTML Links Added in Footer
+cab39b2 HTML Footer Added
+e39b044 vesion1
+1b1135d sample commit
+60629de Add index.html and index.js
+7c02a23 initial commit with README file
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (master)
+$ ls
+clone-testing.txt  dm2.txt  dm4.txt  index.css   index.js   README.md   style.css
+dm1.txt            dm3.txt  dm5.txt  index.html  learngit/  sample.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (master)
+$ git branch development
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (master)
+$ git branch
+  development
+* master
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (master)
+$ git checkout development
+Switched to branch 'development'
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (development)
+$ git branch
+* development
+  master
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (development)
+$ git log --oneline
+a04835c (HEAD -> development, origin/master, origin/HEAD, master) an updated commit message
+c8c0737 File commited to check remove opration
+5e9f92d New files created
+4e717fe clone-testing.txt
+33428d8 css index
+95a40cb CSS For footer links added
+04cffe5 CSS For footer added
+517cb1c CSS For header links added
+8aae0e7 CSS For header added
+0c4ed3a HTML Links Added in Footer
+cab39b2 HTML Footer Added
+e39b044 vesion1
+1b1135d sample commit
+60629de Add index.html and index.js
+7c02a23 initial commit with README file
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (development)
+$ ls
+clone-testing.txt  dm2.txt  dm4.txt  index.css   index.js   README.md   style.css
+dm1.txt            dm3.txt  dm5.txt  index.html  learngit/  sample.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (development)
+$ vi README.md
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (development)
+$ git status
+On branch development
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (development)
+$ git add .
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (development)
+$ git status
+On branch development
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   README.md
+
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (development)
+$ git commit -m "Modifing README file by development branch"
+[development ae0c6cd] Modifing README file by development branch
+ 1 file changed, 10 insertions(+), 1 deletion(-)
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (development)
+$ git log --oneline
+ae0c6cd (HEAD -> development) Modifing README file by development branch
+a04835c (origin/master, origin/HEAD, master) an updated commit message
+c8c0737 File commited to check remove opration
+5e9f92d New files created
+4e717fe clone-testing.txt
+33428d8 css index
+95a40cb CSS For footer links added
+04cffe5 CSS For footer added
+517cb1c CSS For header links added
+8aae0e7 CSS For header added
+0c4ed3a HTML Links Added in Footer
+cab39b2 HTML Footer Added
+e39b044 vesion1
+1b1135d sample commit
+60629de Add index.html and index.js
+7c02a23 initial commit with README file
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (development)
+$ ls
+clone-testing.txt  dm2.txt  dm4.txt  index.css   index.js   README.md   style.css
+dm1.txt            dm3.txt  dm5.txt  index.html  learngit/  sample.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (development)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (master)
+$ git log --oneline
+a04835c (HEAD -> master, origin/master, origin/HEAD) an updated commit message
+c8c0737 File commited to check remove opration
+5e9f92d New files created
+4e717fe clone-testing.txt
+33428d8 css index
+95a40cb CSS For footer links added
+04cffe5 CSS For footer added
+517cb1c CSS For header links added
+8aae0e7 CSS For header added
+0c4ed3a HTML Links Added in Footer
+cab39b2 HTML Footer Added
+e39b044 vesion1
+1b1135d sample commit
+60629de Add index.html and index.js
+7c02a23 initial commit with README file
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (master)
+$ cat README.txt
+cat: README.txt: No such file or directory
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (master)
+$ cat README.md
+Project Description
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (master)
+$ git checkout development
+Switched to branch 'development'
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (development)
+$ git branch feature1
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (development)
+$ git branch
+* development
+  feature1
+  master
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (development)
+$ git checkout feature1
+Switched to branch 'feature1'
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (feature1)
+$ git log --oneline
+ae0c6cd (HEAD -> feature1, development) Modifing README file by development branch
+a04835c (origin/master, origin/HEAD, master) an updated commit message
+c8c0737 File commited to check remove opration
+5e9f92d New files created
+4e717fe clone-testing.txt
+33428d8 css index
+95a40cb CSS For footer links added
+04cffe5 CSS For footer added
+517cb1c CSS For header links added
+8aae0e7 CSS For header added
+0c4ed3a HTML Links Added in Footer
+cab39b2 HTML Footer Added
+e39b044 vesion1
+1b1135d sample commit
+60629de Add index.html and index.js
+7c02a23 initial commit with README file
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (feature1)
+$ cat README.md
+Project Description file:
+# Technologies:
+        HTML
+        CSS
+        JS
+        NODE
+        PYTHON
+        DRAGON
+
+
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (feature1)
+$ git branch
+  development
+* feature1
+  master
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (feature1)
+$ git branch feature2
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (feature1)
+$ git checkout development
+Switched to branch 'development'
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (development)
+$ git branch feature2
+fatal: A branch named 'feature2' already exists.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (development)
+$ git checkout -b feature2
+fatal: A branch named 'feature2' already exists.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (development)
+$ git checkout -b feature3
+Switched to a new branch 'feature3'
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (feature3)
+$ git branch
+  development
+  feature1
+  feature2
+* feature3
+  master
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (feature3)
+$ git checkout development
+Switched to branch 'development'
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (development)
+$ git log --oneline
+ae0c6cd (HEAD -> development, feature3, feature2, feature1) Modifing README file by development branch
+a04835c (origin/master, origin/HEAD, master) an updated commit message
+c8c0737 File commited to check remove opration
+5e9f92d New files created
+4e717fe clone-testing.txt
+33428d8 css index
+95a40cb CSS For footer links added
+04cffe5 CSS For footer added
+517cb1c CSS For header links added
+8aae0e7 CSS For header added
+0c4ed3a HTML Links Added in Footer
+cab39b2 HTML Footer Added
+e39b044 vesion1
+1b1135d sample commit
+60629de Add index.html and index.js
+7c02a23 initial commit with README file
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (development)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (master)
+$ git checkout master
+Already on 'master'
+Your branch is up to date with 'origin/master'.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (master)
+$ git log --oneline
+a04835c (HEAD -> master, origin/master, origin/HEAD) an updated commit message
+c8c0737 File commited to check remove opration
+5e9f92d New files created
+4e717fe clone-testing.txt
+33428d8 css index
+95a40cb CSS For footer links added
+04cffe5 CSS For footer added
+517cb1c CSS For header links added
+8aae0e7 CSS For header added
+0c4ed3a HTML Links Added in Footer
+cab39b2 HTML Footer Added
+e39b044 vesion1
+1b1135d sample commit
+60629de Add index.html and index.js
+7c02a23 initial commit with README file
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (master)
+$ git merge development
+Updating a04835c..ae0c6cd
+Fast-forward
+ README.md | 11 ++++++++++-
+ 1 file changed, 10 insertions(+), 1 deletion(-)
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (master)
+$ git log --oneline
+ae0c6cd (HEAD -> master, feature3, feature2, feature1, development) Modifing README file by development branch
+a04835c (origin/master, origin/HEAD) an updated commit message
+c8c0737 File commited to check remove opration
+5e9f92d New files created
+4e717fe clone-testing.txt
+33428d8 css index
+95a40cb CSS For footer links added
+04cffe5 CSS For footer added
+517cb1c CSS For header links added
+8aae0e7 CSS For header added
+0c4ed3a HTML Links Added in Footer
+cab39b2 HTML Footer Added
+e39b044 vesion1
+1b1135d sample commit
+60629de Add index.html and index.js
+7c02a23 initial commit with README file
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (master)
+$ cat README.md
+Project Description file:
+# Technologies:
+        HTML
+        CSS
+        JS
+        NODE
+        PYTHON
+        DRAGON
+
+
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (master)
+$ git show
+commit ae0c6cd2c2c7db6e8f9b37704604cf88d09a9fe0 (HEAD -> master, feature3, feature2, feature1, development)
+Author: kani <kanishka.3590@gmail.com>
+Date:   Tue Jun 26 15:20:14 2018 +0530
+
+    Modifing README file by development branch
+
+diff --git a/README.md b/README.md
+index b0f509b..8c39c29 100644
+--- a/README.md
++++ b/README.md
+@@ -1 +1,10 @@
+-Project Description
++Project Description file:
++# Technologies:
++       HTML
++       CSS
++       JS
++       NODE
++       PYTHON
++       DRAGON
++
++
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (master)
+$ git checkout feature3
+Switched to branch 'feature3'
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (feature3)
+$ ls
+clone-testing.txt  dm2.txt  dm4.txt  index.css   index.js   README.md   style.css
+dm1.txt            dm3.txt  dm5.txt  index.html  learngit/  sample.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (feature3)
+$ git log --oneline
+ae0c6cd (HEAD -> feature3, master, feature2, feature1, development) Modifing README file by development branch
+a04835c (origin/master, origin/HEAD) an updated commit message
+c8c0737 File commited to check remove opration
+5e9f92d New files created
+4e717fe clone-testing.txt
+33428d8 css index
+95a40cb CSS For footer links added
+04cffe5 CSS For footer added
+517cb1c CSS For header links added
+8aae0e7 CSS For header added
+0c4ed3a HTML Links Added in Footer
+cab39b2 HTML Footer Added
+e39b044 vesion1
+1b1135d sample commit
+60629de Add index.html and index.js
+7c02a23 initial commit with README file
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (feature3)
+$ touch sample.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (feature3)
+$ touch sample2.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (feature3)
+$ git status
+On branch feature3
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        sample2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (feature3)
+$ git add .
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (feature3)
+$ git commit -m "Adding sample1-2 by feature3 branch"
+[feature3 4e4a103] Adding sample1-2 by feature3 branch
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 sample2.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (feature3)
+$ git log --oneline
+4e4a103 (HEAD -> feature3) Adding sample1-2 by feature3 branch
+ae0c6cd (master, feature2, feature1, development) Modifing README file by development branch
+a04835c (origin/master, origin/HEAD) an updated commit message
+c8c0737 File commited to check remove opration
+5e9f92d New files created
+4e717fe clone-testing.txt
+33428d8 css index
+95a40cb CSS For footer links added
+04cffe5 CSS For footer added
+517cb1c CSS For header links added
+8aae0e7 CSS For header added
+0c4ed3a HTML Links Added in Footer
+cab39b2 HTML Footer Added
+e39b044 vesion1
+1b1135d sample commit
+60629de Add index.html and index.js
+7c02a23 initial commit with README file
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (feature3)
+$ git checkout development
+Switched to branch 'development'
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (development)
+$ git log --oneline
+ae0c6cd (HEAD -> development, master, feature2, feature1) Modifing README file by development branch
+a04835c (origin/master, origin/HEAD) an updated commit message
+c8c0737 File commited to check remove opration
+5e9f92d New files created
+4e717fe clone-testing.txt
+33428d8 css index
+95a40cb CSS For footer links added
+04cffe5 CSS For footer added
+517cb1c CSS For header links added
+8aae0e7 CSS For header added
+0c4ed3a HTML Links Added in Footer
+cab39b2 HTML Footer Added
+e39b044 vesion1
+1b1135d sample commit
+60629de Add index.html and index.js
+7c02a23 initial commit with README file
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (development)
+$ ls -la
+total 25
+drwxr-xr-x 1 kanishka 197121    0 Jun 26 15:48 ./
+drwxr-xr-x 1 kanishka 197121    0 Jun 25 15:53 ../
+drwxr-xr-x 1 kanishka 197121    0 Jun 26 15:48 .git/
+-rw-r--r-- 1 kanishka 197121   61 Jun 26 13:35 clone-testing.txt
+-rw-r--r-- 1 kanishka 197121    0 Jun 26 14:24 dm1.txt
+-rw-r--r-- 1 kanishka 197121    0 Jun 26 14:24 dm2.txt
+-rw-r--r-- 1 kanishka 197121    0 Jun 26 14:24 dm3.txt
+-rw-r--r-- 1 kanishka 197121    0 Jun 26 14:24 dm4.txt
+-rw-r--r-- 1 kanishka 197121    0 Jun 26 14:24 dm5.txt
+-rw-r--r-- 1 kanishka 197121   11 Jun 25 15:53 index.css
+-rw-r--r-- 1 kanishka 197121 2060 Jun 25 15:53 index.html
+-rw-r--r-- 1 kanishka 197121   18 Jun 25 15:53 index.js
+drwxr-xr-x 1 kanishka 197121    0 Jun 26 13:35 learngit/
+-rw-r--r-- 1 kanishka 197121   91 Jun 26 15:32 README.md
+-rw-r--r-- 1 kanishka 197121   21 Jun 26 15:44 sample.txt
+-rw-r--r-- 1 kanishka 197121  860 Jun 25 15:53 style.css
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (development)
+$ git checkout feature1
+Switched to branch 'feature1'
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (feature1)
+$ touch sample3.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (feature1)
+$ touch sample4.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (feature1)
+$ git add .
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (feature1)
+$ git commit -m "Adding sample3-4 by feature1 branch"
+[feature1 e1bdc33] Adding sample3-4 by feature1 branch
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 sample3.txt
+ create mode 100644 sample4.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (feature1)
+$ git log --oneline
+e1bdc33 (HEAD -> feature1) Adding sample3-4 by feature1 branch
+ae0c6cd (master, feature2, development) Modifing README file by development branch
+a04835c (origin/master, origin/HEAD) an updated commit message
+c8c0737 File commited to check remove opration
+5e9f92d New files created
+4e717fe clone-testing.txt
+33428d8 css index
+95a40cb CSS For footer links added
+04cffe5 CSS For footer added
+517cb1c CSS For header links added
+8aae0e7 CSS For header added
+0c4ed3a HTML Links Added in Footer
+cab39b2 HTML Footer Added
+e39b044 vesion1
+1b1135d sample commit
+60629de Add index.html and index.js
+7c02a23 initial commit with README file
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (feature1)
+$ git checkout feature3
+Switched to branch 'feature3'
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (feature3)
+$ git log --oneline
+4e4a103 (HEAD -> feature3) Adding sample1-2 by feature3 branch
+ae0c6cd (master, feature2, development) Modifing README file by development branch
+a04835c (origin/master, origin/HEAD) an updated commit message
+c8c0737 File commited to check remove opration
+5e9f92d New files created
+4e717fe clone-testing.txt
+33428d8 css index
+95a40cb CSS For footer links added
+04cffe5 CSS For footer added
+517cb1c CSS For header links added
+8aae0e7 CSS For header added
+0c4ed3a HTML Links Added in Footer
+cab39b2 HTML Footer Added
+e39b044 vesion1
+1b1135d sample commit
+60629de Add index.html and index.js
+7c02a23 initial commit with README file
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (feature3)
+$ git merge feature1
+Merge made by the 'recursive' strategy.
+ sample3.txt | 0
+ sample4.txt | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 sample3.txt
+ create mode 100644 sample4.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (feature3)
+$ git log --oneline
+c88ba18 (HEAD -> feature3) Merge branch 'feature1' into feature3
+e1bdc33 (feature1) Adding sample3-4 by feature1 branch
+4e4a103 Adding sample1-2 by feature3 branch
+ae0c6cd (master, feature2, development) Modifing README file by development branch
+a04835c (origin/master, origin/HEAD) an updated commit message
+c8c0737 File commited to check remove opration
+5e9f92d New files created
+4e717fe clone-testing.txt
+33428d8 css index
+95a40cb CSS For footer links added
+04cffe5 CSS For footer added
+517cb1c CSS For header links added
+8aae0e7 CSS For header added
+0c4ed3a HTML Links Added in Footer
+cab39b2 HTML Footer Added
+e39b044 vesion1
+1b1135d sample commit
+60629de Add index.html and index.js
+7c02a23 initial commit with README file
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (feature3)
+$ ls
+clone-testing.txt  dm2.txt  dm4.txt  index.css   index.js   README.md   sample2.txt  sample4.txt
+dm1.txt            dm3.txt  dm5.txt  index.html  learngit/  sample.txt  sample3.txt  style.css
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (feature3)
+$ git status
+On branch feature3
+nothing to commit, working tree clean
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (feature3)
+$ vi sample3.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (feature3)
+$ git add .
+warning: LF will be replaced by CRLF in sample3.txt.
+The file will have its original line endings in your working directory.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (feature3)
+$ git add .
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (feature3)
+$ git commit -m "Modifing sample3 in feature3"
+[feature3 72c3f36] Modifing sample3 in feature3
+ 1 file changed, 1 insertion(+)
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (feature3)
+$ git log --oneline
+72c3f36 (HEAD -> feature3) Modifing sample3 in feature3
+c88ba18 Merge branch 'feature1' into feature3
+e1bdc33 (feature1) Adding sample3-4 by feature1 branch
+4e4a103 Adding sample1-2 by feature3 branch
+ae0c6cd (master, feature2, development) Modifing README file by development branch
+a04835c (origin/master, origin/HEAD) an updated commit message
+c8c0737 File commited to check remove opration
+5e9f92d New files created
+4e717fe clone-testing.txt
+33428d8 css index
+95a40cb CSS For footer links added
+04cffe5 CSS For footer added
+517cb1c CSS For header links added
+8aae0e7 CSS For header added
+0c4ed3a HTML Links Added in Footer
+cab39b2 HTML Footer Added
+e39b044 vesion1
+1b1135d sample commit
+60629de Add index.html and index.js
+7c02a23 initial commit with README file
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (feature3)
+$ git checkout feature1
+Switched to branch 'feature1'
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (feature1)
+$ git log --oneline
+e1bdc33 (HEAD -> feature1) Adding sample3-4 by feature1 branch
+ae0c6cd (master, feature2, development) Modifing README file by development branch
+a04835c (origin/master, origin/HEAD) an updated commit message
+c8c0737 File commited to check remove opration
+5e9f92d New files created
+4e717fe clone-testing.txt
+33428d8 css index
+95a40cb CSS For footer links added
+04cffe5 CSS For footer added
+517cb1c CSS For header links added
+8aae0e7 CSS For header added
+0c4ed3a HTML Links Added in Footer
+cab39b2 HTML Footer Added
+e39b044 vesion1
+1b1135d sample commit
+60629de Add index.html and index.js
+7c02a23 initial commit with README file
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (feature1)
+$ vi sample3.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (feature1)
+$ git add .
+warning: LF will be replaced by CRLF in sample3.txt.
+The file will have its original line endings in your working directory.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (feature1)
+$ git add .
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (feature1)
+$ git commit -m "Modifing sample3 in feature1"
+[feature1 8c42082] Modifing sample3 in feature1
+ 1 file changed, 1 insertion(+)
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (feature1)
+$ git log --oneline
+8c42082 (HEAD -> feature1) Modifing sample3 in feature1
+e1bdc33 Adding sample3-4 by feature1 branch
+ae0c6cd (master, feature2, development) Modifing README file by development branch
+a04835c (origin/master, origin/HEAD) an updated commit message
+c8c0737 File commited to check remove opration
+5e9f92d New files created
+4e717fe clone-testing.txt
+33428d8 css index
+95a40cb CSS For footer links added
+04cffe5 CSS For footer added
+517cb1c CSS For header links added
+8aae0e7 CSS For header added
+0c4ed3a HTML Links Added in Footer
+cab39b2 HTML Footer Added
+e39b044 vesion1
+1b1135d sample commit
+60629de Add index.html and index.js
+7c02a23 initial commit with README file
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (feature1)
+$ git checkout feature3
+Switched to branch 'feature3'
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (feature3)
+$ git merge feature1
+Auto-merging sample3.txt
+CONFLICT (content): Merge conflict in sample3.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (feature3|MERGING)
+$ vi sample3.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (feature3|MERGING)
+$ git status
+On branch feature3
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+
+        both modified:   sample3.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (feature3|MERGING)
+$ git add .
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (feature3|MERGING)
+$ git status
+On branch feature3
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+
+        modified:   sample3.txt
+
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (feature3|MERGING)
+$ git commit -m "Merging Feature3 and feature1"
+[feature3 94d0591] Merging Feature3 and feature1
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (feature3)
+$ git log --oneline
+94d0591 (HEAD -> feature3) Merging Feature3 and feature1
+8c42082 (feature1) Modifing sample3 in feature1
+72c3f36 Modifing sample3 in feature3
+c88ba18 Merge branch 'feature1' into feature3
+e1bdc33 Adding sample3-4 by feature1 branch
+4e4a103 Adding sample1-2 by feature3 branch
+ae0c6cd (master, feature2, development) Modifing README file by development branch
+a04835c (origin/master, origin/HEAD) an updated commit message
+c8c0737 File commited to check remove opration
+5e9f92d New files created
+4e717fe clone-testing.txt
+33428d8 css index
+95a40cb CSS For footer links added
+04cffe5 CSS For footer added
+517cb1c CSS For header links added
+8aae0e7 CSS For header added
+0c4ed3a HTML Links Added in Footer
+cab39b2 HTML Footer Added
+e39b044 vesion1
+1b1135d sample commit
+60629de Add index.html and index.js
+7c02a23 initial commit with README file
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (feature3)
+$ git push -u origin feature1
+Counting objects: 8, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (8/8), 845 bytes | 105.00 KiB/s, done.
+Total 8 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+To https://github.com/kanishka3590/learngit.git
+ * [new branch]      feature1 -> feature1
+Branch 'feature1' set up to track remote branch 'feature1' from 'origin'.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (feature3)
+$ git push -u origin feature3
+Counting objects: 10, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (10/10), 1.06 KiB | 72.00 KiB/s, done.
+Total 10 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), completed with 1 local object.
+To https://github.com/kanishka3590/learngit.git
+ * [new branch]      feature3 -> feature3
+Branch 'feature3' set up to track remote branch 'feature3' from 'origin'.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (feature3)
+$

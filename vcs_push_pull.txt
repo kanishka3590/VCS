@@ -1,0 +1,234 @@
+kanishka@DESKTOP-E3NRGRV MINGW64 ~
+$ ls
+'3D Objects'/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ git-dir/
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ MicrosoftEdgeBackups/
+ Music/
+'My Documents'@
+ NetHood@
+ NTUSER.DAT
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ NTUSER.DAT{47a6a179-a514-11e7-a94e-ec0d9a05c860}.TxR.0.regtrans-ms
+ NTUSER.DAT{47a6a179-a514-11e7-a94e-ec0d9a05c860}.TxR.1.regtrans-ms
+ NTUSER.DAT{47a6a179-a514-11e7-a94e-ec0d9a05c860}.TxR.2.regtrans-ms
+ NTUSER.DAT{47a6a179-a514-11e7-a94e-ec0d9a05c860}.TxR.blf
+ NTUSER.DAT{47a6a17a-a514-11e7-a94e-ec0d9a05c860}.TM.blf
+ NTUSER.DAT{47a6a17a-a514-11e7-a94e-ec0d9a05c860}.TMContainer0000000000000000000                                                      1.regtrans-ms
+ NTUSER.DAT{47a6a17a-a514-11e7-a94e-ec0d9a05c860}.TMContainer0000000000000000000                                                      2.regtrans-ms
+ ntuser.ini
+ OneDrive/
+ Pictures/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~
+$ cd git-dir
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ ls
+bankers/  leargit_clone/  leargit-demo/  learngit/  learngit1/  wooper-prj/
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ cd learngit
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ vi clone-testing.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git add clone-testing.txt
+warning: LF will be replaced by CRLF in clone-testing.txt.
+The file will have its original line endings in your working directory.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git add .
+warning: adding embedded git repository: learngit
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> learngit
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached learngit
+hint:
+hint: See "git help submodule" for more information.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git add clone-testing.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git commit -m "clone-testing.txt"
+[master 4e717fe] clone-testing.txt
+ 2 files changed, 2 insertions(+)
+ create mode 100644 clone-testing.txt
+ create mode 160000 learngit
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git log --oneline
+4e717fe (HEAD -> master) clone-testing.txt
+33428d8 (origin/master) css index
+95a40cb CSS For footer links added
+04cffe5 CSS For footer added
+517cb1c CSS For header links added
+8aae0e7 CSS For header added
+0c4ed3a HTML Links Added in Footer
+cab39b2 HTML Footer Added
+e39b044 vesion1
+1b1135d sample commit
+60629de Add index.html and index.js
+7c02a23 initial commit with README file
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git push -u origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 368 bytes | 92.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/kanishka3590/learngit.git
+   33428d8..4e717fe  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ cd ..
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ cd learngit_clone
+bash: cd: learngit_clone: No such file or directory
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ cd leargit_clone
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (master)
+$ ls -la
+total 24
+drwxr-xr-x 1 kanishka 197121    0 Jun 25 15:53 ./
+drwxr-xr-x 1 kanishka 197121    0 Jun 25 15:53 ../
+drwxr-xr-x 1 kanishka 197121    0 Jun 25 15:53 .git/
+-rw-r--r-- 1 kanishka 197121   11 Jun 25 15:53 index.css
+-rw-r--r-- 1 kanishka 197121 2060 Jun 25 15:53 index.html
+-rw-r--r-- 1 kanishka 197121   18 Jun 25 15:53 index.js
+-rw-r--r-- 1 kanishka 197121   21 Jun 25 15:53 README.md
+-rw-r--r-- 1 kanishka 197121   21 Jun 25 15:53 sample.txt
+-rw-r--r-- 1 kanishka 197121  860 Jun 25 15:53 style.css
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (master)
+$ git pull origin master
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 3 (delta 1), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/kanishka3590/learngit
+ * branch            master     -> FETCH_HEAD
+   33428d8..4e717fe  master     -> origin/master
+Updating 33428d8..4e717fe
+Fast-forward
+ clone-testing.txt | 1 +
+ learngit          | 1 +
+ 2 files changed, 2 insertions(+)
+ create mode 100644 clone-testing.txt
+ create mode 160000 learngit
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (master)
+$ ls -la
+total 25
+drwxr-xr-x 1 kanishka 197121    0 Jun 26 13:35 ./
+drwxr-xr-x 1 kanishka 197121    0 Jun 25 15:53 ../
+drwxr-xr-x 1 kanishka 197121    0 Jun 26 13:35 .git/
+-rw-r--r-- 1 kanishka 197121   61 Jun 26 13:35 clone-testing.txt
+-rw-r--r-- 1 kanishka 197121   11 Jun 25 15:53 index.css
+-rw-r--r-- 1 kanishka 197121 2060 Jun 25 15:53 index.html
+-rw-r--r-- 1 kanishka 197121   18 Jun 25 15:53 index.js
+drwxr-xr-x 1 kanishka 197121    0 Jun 26 13:35 learngit/
+-rw-r--r-- 1 kanishka 197121   21 Jun 25 15:53 README.md
+-rw-r--r-- 1 kanishka 197121   21 Jun 25 15:53 sample.txt
+-rw-r--r-- 1 kanishka 197121  860 Jun 25 15:53 style.css
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/leargit_clone (master)
+$ git log
+commit 4e717fe271853b6e59422289b6fa0bb01480da00 (HEAD -> master, origin/master,                                                       origin/HEAD)
+Author: kan <kanishka.3590@gmail.co>
+Date:   Tue Jun 26 13:31:43 2018 +0530
+
+    clone-testing.txt
+
+commit 33428d81573f28f521b373eb5327a6f1effa561b
+Author: kan <kanishka.3590@gmail.co>
+Date:   Thu Jun 21 15:13:54 2018 +0530
+
+    css index
+
+commit 95a40cbad56458dd49e3ab3883f6d620f8ebb91f
+Author: kan <kanishka.3590@gmail.co>
+Date:   Thu Jun 21 14:10:40 2018 +0530
+
+    CSS For footer links added
+
+commit 04cffe5f4c6d736504d99e14eb499ae6408dfdac
+Author: kan <kanishka.3590@gmail.co>
+Date:   Thu Jun 21 14:09:25 2018 +0530
+
+:...skipping...
+commit 4e717fe271853b6e59422289b6fa0bb01480da00 (HEAD -> master, origin/master, origin/HEAD)
+Author: kan <kanishka.3590@gmail.co>
+Date:   Tue Jun 26 13:31:43 2018 +0530
+
+    clone-testing.txt
+
+commit 33428d81573f28f521b373eb5327a6f1effa561b
+Author: kan <kanishka.3590@gmail.co>
+Date:   Thu Jun 21 15:13:54 2018 +0530
+
+    css index
+
+commit 95a40cbad56458dd49e3ab3883f6d620f8ebb91f
+Author: kan <kanishka.3590@gmail.co>
+Date:   Thu Jun 21 14:10:40 2018 +0530
+
+    CSS For footer links added
+
+commit 04cffe5f4c6d736504d99e14eb499ae6408dfdac
+Author: kan <kanishka.3590@gmail.co>
+Date:   Thu Jun 21 14:09:25 2018 +0530
+
+    CSS For footer added
+
+commit 517cb1c205c5cdd80ab470ca8a064c8da5e02706
+Author: kan <kanishka.3590@gmail.co>
+Date:   Thu Jun 21 14:05:31 2018 +0530
+
+    CSS For header links added
+
+commit 8aae0e729b4d77a316b685b0b87605c7c438e441
+Author: kan <kanishka.3590@gmail.co>
+Date:   Thu Jun 21 13:37:26 2018 +0530
+
+    CSS For header added
+
+commit 0c4ed3a5081a388ed67f4141f95da8de9a1409b7
+Author: kan <kanishka.3590@gmail.co>
+Date:   Thu Jun 21 13:31:05 2018 +0530
+
+:

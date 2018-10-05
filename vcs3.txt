@@ -1,0 +1,778 @@
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~
+$ pwd
+/c/Users/kanishka
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~
+$ cp /../E/htmlcss/htmlcss/Working Files/Website Project/index.html git-dir/
+cp: cannot stat '/../E/htmlcss/htmlcss/Working': No such file or directory
+cp: cannot stat 'Files/Website': No such file or directory
+cp: cannot stat 'Project/index.html': No such file or directory
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~
+$ cd ..
+
+kanishka@DESKTOP-E3NRGRV MINGW64 /c/Users
+$ cd ..
+
+kanishka@DESKTOP-E3NRGRV MINGW64 /c
+$ cd ..
+
+kanishka@DESKTOP-E3NRGRV MINGW64 /
+$ cp E/htmlcss/htmlcss/Working Files/Website Project/index.html c/Users/kanishka                                          /git-dir/
+cp: cannot stat 'E/htmlcss/htmlcss/Working': No such file or directory
+cp: cannot stat 'Files/Website': No such file or directory
+cp: cannot stat 'Project/index.html': No such file or directory
+
+kanishka@DESKTOP-E3NRGRV MINGW64 /
+$ cd e
+
+kanishka@DESKTOP-E3NRGRV MINGW64 /e
+$ cd ..
+
+kanishka@DESKTOP-E3NRGRV MINGW64 /
+$ cp e/htmlcss/htmlcss/Working Files/Website Project/index.html c/Users/kanishka                                          /git-dir/
+cp: cannot stat 'e/htmlcss/htmlcss/Working': No such file or directory
+cp: cannot stat 'Files/Website': No such file or directory
+cp: cannot stat 'Project/index.html': No such file or directory
+
+kanishka@DESKTOP-E3NRGRV MINGW64 /
+$ cp /e/htmlcss/htmlcss/Working Files/Website Project/index.html c/Users/kanishk                                          a/git-dir/
+cp: cannot stat '/e/htmlcss/htmlcss/Working': No such file or directory
+cp: cannot stat 'Files/Website': No such file or directory
+cp: cannot stat 'Project/index.html': No such file or directory
+
+kanishka@DESKTOP-E3NRGRV MINGW64 /
+$ cd e
+
+kanishka@DESKTOP-E3NRGRV MINGW64 /e
+$ cd htmlcss
+
+kanishka@DESKTOP-E3NRGRV MINGW64 /e/htmlcss
+$ cd htmlcss
+
+kanishka@DESKTOP-E3NRGRV MINGW64 /e/htmlcss/htmlcss
+$ cd Working Files
+bash: cd: too many arguments
+
+kanishka@DESKTOP-E3NRGRV MINGW64 /e/htmlcss/htmlcss
+$ cd WorkingFiles
+bash: cd: WorkingFiles: No such file or directory
+
+kanishka@DESKTOP-E3NRGRV MINGW64 /e/htmlcss/htmlcss
+$ cd Working%Files
+bash: cd: Working%Files: No such file or directory
+
+kanishka@DESKTOP-E3NRGRV MINGW64 /e/htmlcss/htmlcss
+$ cd WorkingFiles
+
+kanishka@DESKTOP-E3NRGRV MINGW64 /e/htmlcss/htmlcss/WorkingFiles
+$ cd .
+
+kanishka@DESKTOP-E3NRGRV MINGW64 /e/htmlcss/htmlcss/WorkingFiles
+$ cd ..
+
+kanishka@DESKTOP-E3NRGRV MINGW64 /e/htmlcss/htmlcss
+$ cd ..
+
+kanishka@DESKTOP-E3NRGRV MINGW64 /e/htmlcss
+$ cd ..
+
+kanishka@DESKTOP-E3NRGRV MINGW64 /e
+$ cd ..
+
+kanishka@DESKTOP-E3NRGRV MINGW64 /
+$ cp e/htmlcss/htmlcss/WorkingFiles/WebsiteProject/index.html c/Users/kanishka/g                                          it-dir/
+
+kanishka@DESKTOP-E3NRGRV MINGW64 /
+$ cd c
+
+kanishka@DESKTOP-E3NRGRV MINGW64 /c
+$ cd Users
+
+kanishka@DESKTOP-E3NRGRV MINGW64 /c/Users
+$ cd kanishka/git-dir
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ vi index.html
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ vim index.html
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ git add index.html
+fatal: not a git repository (or any of the parent directories): .git
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ ls -la
+total 28
+drwxr-xr-x 1 kanishka 197121    0 Jun 21 13:22 ./
+drwxr-xr-x 1 kanishka 197121    0 Jun 21 13:22 ../
+drwxr-xr-x 1 kanishka 197121    0 Jun 21 13:07 bankers/
+-rw-r--r-- 1 kanishka 197121 1952 Jun 21 13:22 index.html
+drwxr-xr-x 1 kanishka 197121    0 Jun 21 13:07 learngit/
+drwxr-xr-x 1 kanishka 197121    0 Jun 21 13:07 learngit1/
+drwxr-xr-x 1 kanishka 197121    0 Jun 20 14:06 learngit2/
+drwxr-xr-x 1 kanishka 197121    0 Jun 19 15:29 wooper-prj/
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ mv index.html learngit/
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ cd learngit
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ ls -la
+total 19
+drwxr-xr-x 1 kanishka 197121    0 Jun 21 13:26 ./
+drwxr-xr-x 1 kanishka 197121    0 Jun 21 13:26 ../
+drwxr-xr-x 1 kanishka 197121    0 Jun 21 13:07 .git/
+-rw-r--r-- 1 kanishka 197121    0 Jun 20 14:08 demo3.js
+-rw-r--r-- 1 kanishka 197121 1952 Jun 21 13:22 index.html
+-rw-r--r-- 1 kanishka 197121   16 Jun 19 15:35 index.js
+-rw-r--r-- 1 kanishka 197121   20 Jun 19 15:47 README.md
+drwxr-xr-x 1 kanishka 197121    0 Jun 20 14:50 sample/
+-rw-r--r-- 1 kanishka 197121   74 Jun 20 15:11 sample.txt
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git add index.html
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git commit -a "HTML Footer Added"
+fatal: Paths with -a does not make sense.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git commit -m "HTML Footer Added"
+[master cab39b2] HTML Footer Added
+ 1 file changed, 49 insertions(+)
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ vi index.html
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git commit -m "HTML Links Added in Footer"
+On branch master
+Changes not staged for commit:
+        modified:   index.html
+        modified:   sample.txt
+
+Untracked files:
+        demo3.js
+
+no changes added to commit
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git add index.html
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git commit -m "HTML Links Added in Footer"
+[master 0c4ed3a] HTML Links Added in Footer
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ vi index.html
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ cp e/htmlcss/htmlcss/WorkingFiles/WebsiteProject/css/style.css c/Users/kanishk                                          a/git-dir/learngit
+cp: cannot stat 'e/htmlcss/htmlcss/WorkingFiles/WebsiteProject/css/style.css': N                                          o such file or directory
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ cd ..
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ cd ..
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~
+$ cd ..
+
+kanishka@DESKTOP-E3NRGRV MINGW64 /c/Users
+$ cd ..
+
+kanishka@DESKTOP-E3NRGRV MINGW64 /c
+$ cd ..
+
+kanishka@DESKTOP-E3NRGRV MINGW64 /
+$ cp e/htmlcss/htmlcss/WorkingFiles/WebsiteProject/css/style.css c/Users/kanishk                                          a/git-dir/learngit
+
+kanishka@DESKTOP-E3NRGRV MINGW64 /
+$ cd c/Users
+
+kanishka@DESKTOP-E3NRGRV MINGW64 /c/Users
+$ cd kanishka
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~
+$ cd c/Users
+bash: cd: c/Users: No such file or directory
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~
+$ pwd
+/c/Users/kanishka
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~
+$ cd git-dir
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ cd learngit
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ ls
+demo3.js  index.html  index.js  README.md  sample/  sample.txt  style.css
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ vi style.css
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git add style.css
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git commit -m "CSS For header added"
+[master 8aae0e7] CSS For header added
+ 1 file changed, 42 insertions(+)
+ create mode 100644 style.css
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git log
+commit 8aae0e729b4d77a316b685b0b87605c7c438e441 (HEAD -> master)
+Author: kan <kanishka.3590@gmail.co>
+Date:   Thu Jun 21 13:37:26 2018 +0530
+
+    CSS For header added
+
+commit 0c4ed3a5081a388ed67f4141f95da8de9a1409b7
+Author: kan <kanishka.3590@gmail.co>
+Date:   Thu Jun 21 13:31:05 2018 +0530
+
+    HTML Links Added in Footer
+
+commit cab39b263867069394a9ba6c7f74f23f1b70100c
+Author: kan <kanishka.3590@gmail.co>
+Date:   Thu Jun 21 13:27:43 2018 +0530
+
+    HTML Footer Added
+
+commit e39b0449c1e971baedeb3866a763f06124f27fb9
+Author: kan <kanishka.3590@gmail.co>
+Date:   Wed Jun 20 15:01:02 2018 +0530
+
+    vesion1
+
+commit 1b1135de7590415308889fb17e3eeb0f851ab469
+Author: kan <kanishka.3590@gmail.co>
+Date:   Wed Jun 20 14:55:48 2018 +0530
+
+    sample commit
+
+commit 60629dea604e7028e6b6acf23e9cd1e0860471ad
+Author: kan <kanishka.3590@gmail.co>
+Date:   Tue Jun 19 15:57:27 2018 +0530
+
+    Add index.html and index.js
+
+commit 7c02a23e85e1db86ab6d64a3dcfecf800f14e5ae
+Author: kan <kanishka.3590@gmail.co>
+Date:   Tue Jun 19 15:51:44 2018 +0530
+
+    initial commit with README file
+(END)
+commit e39b0449c1e971baedeb3866a763f06124f27fb9
+Author: kan <kanishka.3590@gmail.co>
+Date:   Wed Jun 20 15:01:02 2018 +0530
+
+    vesion1
+
+commit 1b1135de7590415308889fb17e3eeb0f851ab469
+Author: kan <kanishka.3590@gmail.co>
+Date:   Wed Jun 20 14:55:48 2018 +0530
+
+    sample commit
+
+commit 60629dea604e7028e6b6acf23e9cd1e0860471ad
+Author: kan <kanishka.3590@gmail.co>
+Date:   Tue Jun 19 15:57:27 2018 +0530
+
+    Add index.html and index.js
+
+commit 7c02a23e85e1db86ab6d64a3dcfecf800f14e5ae
+Author: kan <kanishka.3590@gmail.co>
+Date:   Tue Jun 19 15:51:44 2018 +0530
+
+    initial commit with README file
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ vi styke.css
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ vi style.css
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git add style.css
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git commit -m "CSS For header links added"
+[master 517cb1c] CSS For header links added
+ 1 file changed, 6 insertions(+)
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ vi index.css
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ ls
+demo3.js  index.html  index.js  README.md  sample/  sample.txt  style.css
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ vi index.html
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ vi style.css
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git add style.css
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git commit -m "CSS For footer added"
+[master 04cffe5] CSS For footer added
+ 1 file changed, 4 insertions(+)
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ vi style.css
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git add style.css
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git commit -m "CSS For footer links added"
+[master 95a40cb] CSS For footer links added
+ 1 file changed, 4 insertions(+)
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git log
+commit 95a40cbad56458dd49e3ab3883f6d620f8ebb91f (HEAD -> master)
+Author: kan <kanishka.3590@gmail.co>
+Date:   Thu Jun 21 14:10:40 2018 +0530
+
+    CSS For footer links added
+
+commit 04cffe5f4c6d736504d99e14eb499ae6408dfdac
+Author: kan <kanishka.3590@gmail.co>
+Date:   Thu Jun 21 14:09:25 2018 +0530
+
+    CSS For footer added
+
+commit 517cb1c205c5cdd80ab470ca8a064c8da5e02706
+Author: kan <kanishka.3590@gmail.co>
+Date:   Thu Jun 21 14:05:31 2018 +0530
+
+    CSS For header links added
+
+commit 8aae0e729b4d77a316b685b0b87605c7c438e441
+Author: kan <kanishka.3590@gmail.co>
+Date:   Thu Jun 21 13:37:26 2018 +0530
+
+    CSS For header added
+
+commit 0c4ed3a5081a388ed67f4141f95da8de9a1409b7
+Author: kan <kanishka.3590@gmail.co>
+Date:   Thu Jun 21 13:31:05 2018 +0530
+
+    HTML Links Added in Footer
+
+commit cab39b263867069394a9ba6c7f74f23f1b70100c
+Author: kan <kanishka.3590@gmail.co>
+Date:   Thu Jun 21 13:27:43 2018 +0530
+
+    HTML Footer Added
+
+commit e39b0449c1e971baedeb3866a763f06124f27fb9
+Author: kan <kanishka.3590@gmail.co>
+Date:   Wed Jun 20 15:01:02 2018 +0530
+
+    vesion1
+
+commit 1b1135de7590415308889fb17e3eeb0f851ab469
+Author: kan <kanishka.3590@gmail.co>
+Date:   Wed Jun 20 14:55:48 2018 +0530
+
+    sample commit
+
+commit 60629dea604e7028e6b6acf23e9cd1e0860471ad
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git log
+commit 95a40cbad56458dd49e3ab3883f6d620f8ebb91f (HEAD -> master)
+Author: kan <kanishka.3590@gmail.co>
+Date:   Thu Jun 21 14:10:40 2018 +0530
+
+    CSS For footer links added
+
+commit 04cffe5f4c6d736504d99e14eb499ae6408dfdac
+Author: kan <kanishka.3590@gmail.co>
+Date:   Thu Jun 21 14:09:25 2018 +0530
+
+    CSS For footer added
+
+commit 517cb1c205c5cdd80ab470ca8a064c8da5e02706
+Author: kan <kanishka.3590@gmail.co>
+Date:   Thu Jun 21 14:05:31 2018 +0530
+
+    CSS For header links added
+
+commit 8aae0e729b4d77a316b685b0b87605c7c438e441
+Author: kan <kanishka.3590@gmail.co>
+Date:   Thu Jun 21 13:37:26 2018 +0530
+
+    CSS For header added
+
+commit 0c4ed3a5081a388ed67f4141f95da8de9a1409b7
+Author: kan <kanishka.3590@gmail.co>
+Date:   Thu Jun 21 13:31:05 2018 +0530
+
+    HTML Links Added in Footer
+
+commit cab39b263867069394a9ba6c7f74f23f1b70100c
+Author: kan <kanishka.3590@gmail.co>
+Date:   Thu Jun 21 13:27:43 2018 +0530
+
+    HTML Footer Added
+
+commit e39b0449c1e971baedeb3866a763f06124f27fb9
+Author: kan <kanishka.3590@gmail.co>
+Date:   Wed Jun 20 15:01:02 2018 +0530
+
+    vesion1
+
+commit 1b1135de7590415308889fb17e3eeb0f851ab469
+Author: kan <kanishka.3590@gmail.co>
+Date:   Wed Jun 20 14:55:48 2018 +0530
+
+    sample commit
+
+commit 60629dea604e7028e6b6acf23e9cd1e0860471ad
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ q
+bash: q: command not found
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git log --oneline
+95a40cb (HEAD -> master) CSS For footer links added
+04cffe5 CSS For footer added
+517cb1c CSS For header links added
+8aae0e7 CSS For header added
+0c4ed3a HTML Links Added in Footer
+cab39b2 HTML Footer Added
+e39b044 vesion1
+1b1135d sample commit
+60629de Add index.html and index.js
+7c02a23 initial commit with README file
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ ls
+demo3.js  index.html  index.js  README.md  sample/  sample.txt  style.css
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ q
+bash: q: command not found
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git remote add origin https://github.com/kanishka3590/learngit.git
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git remote
+origin
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git remote -v
+origin  https://github.com/kanishka3590/learngit.git (fetch)
+origin  https://github.com/kanishka3590/learngit.git (push)
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git push -u
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git push -u orLogon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com': remote: Anonymous access to kanishka3590/learngit.git denied.
+fatal: Authentication failed for 'https://github.com/kanishka3590/learngit.git/'
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git remote -v
+origin  https://github.com/kanishka3590/learngit.git (fetch)
+origin  https://github.com/kanishka3590/learngit.git (push)
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$
+gitorigin master origin https://github.com/kanishka3590--set-upstream /learngit.g
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=<push|fetch>]
+                          set up remote as a mirror to push to or fetch from
+
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+gitorigin master[3~origin mastergithub.com/kanishka3590--set-upstream /learngit.g
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=<push|fetch>]
+                          set up remote as a mirror to push to or fetch from
+
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+git push -u origin master
+error: unknown switch `u'
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=<push|fetch>]
+                          set up remote as a mirror to push to or fetch from
+
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ cat .git/config
+[core]
+        repositoryformatversion = 0
+        filemode = false
+        bare = false
+        logallrefupdates = true
+        symlinks = false
+        ignorecase = true
+        editor = vim
+[user]
+        name = kan
+        email = kanishka.3590@gmail.co
+[remote "origin"]
+        url = https://github.com/kanishka3590/learngit.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$
+
+      push -u
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git push -u origin master
+Counting objects: 30, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (25/25), done.
+Writing objects: 100% (30/30), 3.45 KiB | 110.00 KiB/s, done.
+Total 30 (delta 12), reused 0 (delta 0)
+remote: Resolving deltas: 100% (12/12), done.
+To https://github.com/kanishka3590/learngit.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git shortlog
+kan (10):
+      initial commit with README file
+      Add index.html and index.js
+      sample commit
+      vesion1
+      HTML Footer Added
+      HTML Links Added in Footer
+      CSS For header added
+      CSS For header links added
+      CSS For footer added
+      CSS For footer links added
+
+
+ka
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git clone https://github.com/kanishka3590/learngit
+Cloning into 'learngit'...
+remote: Counting objects: 30, done.
+remote: Compressing objects: 100% (13/13), done.
+remote: Total 30 (delta 12), reused 30 (delta 12), pack-reused 0
+Unpacking objects: 100% (30/30), done.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$
+
+
+
+
+
+
+
+
+
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$
+
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ vi index.css
+
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git add index.css
+warning: LF will be replaced by CRLF in index.css.
+The file will have its original line endings in your working directory.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git commit -m "css index"
+[master 33428d8] css index
+ 1 file changed, 1 insertion(+)
+ create mode 100644 index.css
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git push -u origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 266 bytes | 66.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/kanishka3590/learngit.git
+   95a40cb..33428d8  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   sample.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        demo3.js
+        learngit/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git clone https://github.com/kanishka3590/Demoremote
+Cloning into 'Demoremote'...
+warning: You appear to have cloned an empty repository.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ git remote -v
+origin  https://github.com/kanishka3590/learngit.git (fetch)
+origin  https://github.com/kanishka3590/learngit.git (push)
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit (master)
+$ cd ..
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ ls
+bankers/  learngit/  learngit1/  learngit2/  wooper-prj/
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ git log --oneline|wc -l
+fatal: not a git repository (or any of the parent directories): .git
+0
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ git show
+fatal: not a git repository (or any of the parent directories): .git
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$

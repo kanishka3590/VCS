@@ -1,0 +1,528 @@
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~
+$ cd git-dir
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ cd leargit
+bash: cd: leargit: No such file or directory
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ mkdir leargit3
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ cd learngit1
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ ls
+demo1.js  demo2.html
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ ls -la
+total 9
+drwxr-xr-x 1 kanishka 197121  0 Jun 21 13:07 ./
+drwxr-xr-x 1 kanishka 197121  0 Jun 22 18:28 ../
+drwxr-xr-x 1 kanishka 197121  0 Jun 21 13:07 .git/
+-rw-r--r-- 1 kanishka 197121 14 Jun 20 11:27 demo1.js
+-rw-r--r-- 1 kanishka 197121  0 Jun 20 11:27 demo2.html
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ touch README.md
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ echo "learning git" >> README.md
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ git add .
+warning: LF will be replaced by CRLF in demo1.js.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in README.md.
+The file will have its original line endings in your working directory.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ ls
+demo1.js  demo2.html  README.md
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ ls -la
+total 14
+drwxr-xr-x 1 kanishka 197121  0 Jun 22 18:30 ./
+drwxr-xr-x 1 kanishka 197121  0 Jun 22 18:28 ../
+drwxr-xr-x 1 kanishka 197121  0 Jun 22 18:32 .git/
+-rw-r--r-- 1 kanishka 197121 14 Jun 20 11:27 demo1.js
+-rw-r--r-- 1 kanishka 197121  0 Jun 20 11:27 demo2.html
+-rw-r--r-- 1 kanishka 197121 13 Jun 22 18:31 README.md
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   README.md
+        new file:   demo1.js
+        new file:   demo2.html
+
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ git commit -m "README file created"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'kanishka@DESKTOP-E3NRGRV.(none)                                                      ')
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ git log
+fatal: your current branch 'master' does not have any commits yet
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ vi README.md
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ git add README.md
+warning: LF will be replaced by CRLF in README.md.
+The file will have its original line endings in your working directory.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ git add .
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ git commit -m "README file created"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'kanishka@DESKTOP-E3NRGRV.(none)                                                      ')
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ git log
+fatal: your current branch 'master' does not have any commits yet
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ git config
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-regex]
+    --get-all             get all values: key [value-regex]
+    --get-regexp          get values for regexp: name-regex [value-regex]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value_rege                                                      x]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-regex]
+    --unset-all           remove all matches: name [value-regex]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, com                                                      mand line)
+
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ git config --system
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-regex]
+    --get-all             get all values: key [value-regex]
+    --get-regexp          get values for regexp: name-regex [value-regex]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value_regex]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-regex]
+    --unset-all           remove all matches: name [value-regex]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ cat /etc/gitconfig
+cat: /etc/gitconfig: No such file or directory
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ cd
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~
+$ cat /etc/gitconfig
+cat: /etc/gitconfig: No such file or directory
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~
+$ git config --system --list
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+http.sslbackend=openssl
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+credential.helper=manager
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~
+$ git config --system user.name "kan"
+error: could not lock config file C:/Program Files/Git/mingw64/etc/gitconfig: Permission denied
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~
+$ git config --system user.name "ka"
+error: could not lock config file C:/Program Files/Git/mingw64/etc/gitconfig: Permission denied
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~
+$ git config --system user.name "kani"
+error: could not lock config file C:/Program Files/Git/mingw64/etc/gitconfig: Permission denied
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~
+$ git config --system user.name "kanishka"
+error: could not lock config file C:/Program Files/Git/mingw64/etc/gitconfig: Permission denied
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~
+$ cd git-dir
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ git config --system --list
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+http.sslbackend=openssl
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+credential.helper=manager
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ cat /etc/gitconfig
+cat: /etc/gitconfig: No such file or directory
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ git config --system user.name "kan"
+error: could not lock config file C:/Program Files/Git/mingw64/etc/gitconfig: Permission denied
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ git config --system user.name "kanishka"
+error: could not lock config file C:/Program Files/Git/mingw64/etc/gitconfig: Permission denied
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ git config --system user.name "kan"
+error: could not lock config file C:/Program Files/Git/mingw64/etc/gitconfig: Permission denied
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ git config --system user.name "ka"
+error: could not lock config file C:/Program Files/Git/mingw64/etc/gitconfig: Permission denied
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ git config --system user.name "kani"
+error: could not lock config file C:/Program Files/Git/mingw64/etc/gitconfig: Permission denied
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ git config --global --list
+fatal: unable to read config file 'C:/Users/kanishka/.gitconfig': No such file or directory
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir
+$ cd
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~
+$ git config --global --list
+fatal: unable to read config file 'C:/Users/kanishka/.gitconfig': No such file or directory
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~
+$ git config --global user.name "kani"
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~
+$ git config --global user.email "kanishka.3590@gmail.com"
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~
+$ git config --global --list
+user.name=kani
+user.email=kanishka.3590@gmail.com
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~
+$ ls
+'3D Objects'/             ntuser.dat.LOG2
+ AppData/                 NTUSER.DAT{47a6a179-a514-11e7-a94e-ec0d9a05c860}.TxR.0.regtrans-ms
+'Application Data'@       NTUSER.DAT{47a6a179-a514-11e7-a94e-ec0d9a05c860}.TxR.1.regtrans-ms
+ Contacts/                NTUSER.DAT{47a6a179-a514-11e7-a94e-ec0d9a05c860}.TxR.2.regtrans-ms
+ Cookies@                 NTUSER.DAT{47a6a179-a514-11e7-a94e-ec0d9a05c860}.TxR.blf
+ Desktop/                 NTUSER.DAT{47a6a17a-a514-11e7-a94e-ec0d9a05c860}.TM.blf
+ Documents/               NTUSER.DAT{47a6a17a-a514-11e7-a94e-ec0d9a05c860}.TMContainer00000000000000000001.regtrans-ms
+ Downloads/               NTUSER.DAT{47a6a17a-a514-11e7-a94e-ec0d9a05c860}.TMContainer00000000000000000002.regtrans-ms
+ Favorites/               ntuser.ini
+ git-dir/                 OneDrive/
+ IntelGraphicsProfiles/   Pictures/
+ Links/                   PrintHood@
+'Local Settings'@         Recent@
+ MicrosoftEdgeBackups/   'Saved Games'/
+ Music/                   Searches/
+'My Documents'@           SendTo@
+ NetHood@                'Start Menu'@
+ NTUSER.DAT               Templates@
+ ntuser.dat.LOG1          Videos/
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~
+$ git config --local user.name "ka"
+fatal: --local can only be used inside a git repository
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~
+$ cd git-dir/learngit1
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ git config --local user.name "ka"
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ git config --local user.email "kanishka.3590@gmail.com"
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ git config --local --list
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+user.name=ka
+user.email=kanishka.3590@gmail.com
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ cat .git/config
+[core]
+        repositoryformatversion = 0
+        filemode = false
+        bare = false
+        logallrefupdates = true
+        symlinks = false
+        ignorecase = true
+[user]
+        name = ka
+        email = kanishka.3590@gmail.com
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ vi README.md
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ git add README.md
+warning: LF will be replaced by CRLF in README.md.
+The file will have its original line endings in your working directory.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ git add .
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ git commit -m "README file created"
+[master (root-commit) e330766] README file created
+ 3 files changed, 3 insertions(+)
+ create mode 100644 README.md
+ create mode 100644 demo1.js
+ create mode 100644 demo2.html
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ git log
+commit e330766fe498ca7b9d4eb312d8de4f0ebc1a7da6 (HEAD -> master)
+Author: ka <kanishka.3590@gmail.com>
+Date:   Fri Jun 22 19:10:42 2018 +0530
+
+    README file created
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ ls
+demo1.js  demo2.html  README.md
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ vi demo1.js
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ git add demo1.js
+warning: LF will be replaced by CRLF in demo1.js.
+The file will have its original line endings in your working directory.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ vi demo1.js demo2.html README.md
+3 files to edit
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ git add demo1.js demo2.html README.md
+warning: LF will be replaced by CRLF in demo1.js.
+The file will have its original line endings in your working directory.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ git add demo1.js demo2.html
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ git commit -m "Demo1 file created"
+[master b53bfc1] Demo1 file created
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ git log
+commit b53bfc1294dbd7f9bc3279f9fb072b9bc4904dfc (HEAD -> master)
+Author: ka <kanishka.3590@gmail.com>
+Date:   Fri Jun 22 19:16:12 2018 +0530
+
+    Demo1 file created
+
+commit e330766fe498ca7b9d4eb312d8de4f0ebc1a7da6
+Author: ka <kanishka.3590@gmail.com>
+Date:   Fri Jun 22 19:10:42 2018 +0530
+
+    README file created
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ vi demo2.html
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ git add demo1.js demo2.html
+warning: LF will be replaced by CRLF in demo2.html.
+The file will have its original line endings in your working directory.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ git add demo2.html demo1.js
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ git commit -m "Demo2 html file created"
+[master 4a464d0] Demo2 html file created
+ 1 file changed, 6 insertions(+)
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ git log
+commit 4a464d0b4346fb1d6a61a2283393e6eed989bc4c (HEAD -> master)
+Author: ka <kanishka.3590@gmail.com>
+Date:   Fri Jun 22 19:17:57 2018 +0530
+
+    Demo2 html file created
+
+commit b53bfc1294dbd7f9bc3279f9fb072b9bc4904dfc
+Author: ka <kanishka.3590@gmail.com>
+Date:   Fri Jun 22 19:16:12 2018 +0530
+
+    Demo1 file created
+
+commit e330766fe498ca7b9d4eb312d8de4f0ebc1a7da6
+Author: ka <kanishka.3590@gmail.com>
+Date:   Fri Jun 22 19:10:42 2018 +0530
+
+    README file created
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ vi demo2.html
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ git add demo2.html demo1.js
+warning: LF will be replaced by CRLF in demo2.html.
+The file will have its original line endings in your working directory.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ git add demo2.html demo1.js
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ git commit -m "Given the title to Demo2 html file"
+[master 314b8d0] Given the title to Demo2 html file
+ 1 file changed, 2 insertions(+)
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ git log
+commit 314b8d0258d6fc5af774d668b37d9bdec3649308 (HEAD -> master)
+Author: ka <kanishka.3590@gmail.com>
+Date:   Fri Jun 22 19:20:20 2018 +0530
+
+    Given the title to Demo2 html file
+
+commit 4a464d0b4346fb1d6a61a2283393e6eed989bc4c
+Author: ka <kanishka.3590@gmail.com>
+Date:   Fri Jun 22 19:17:57 2018 +0530
+
+    Demo2 html file created
+
+commit b53bfc1294dbd7f9bc3279f9fb072b9bc4904dfc
+Author: ka <kanishka.3590@gmail.com>
+Date:   Fri Jun 22 19:16:12 2018 +0530
+
+    Demo1 file created
+
+commit e330766fe498ca7b9d4eb312d8de4f0ebc1a7da6
+Author: ka <kanishka.3590@gmail.com>
+Date:   Fri Jun 22 19:10:42 2018 +0530
+
+    README file created
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ git remote add origin https://github.com/kanishka3590/leargit-demo
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ push -u origin master
+bash: push: command not found
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ git push -u origin master
+Counting objects: 14, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (14/14), 1.13 KiB | 82.00 KiB/s, done.
+Total 14 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/kanishka3590/leargit-demo
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$ ^C
+
+kanishka@DESKTOP-E3NRGRV MINGW64 ~/git-dir/learngit1 (master)
+$
